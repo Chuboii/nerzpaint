@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Container, H4, Title, Wrapper, Wrap, Icon, Comment, Name, ImageBox } from '../Reviews.style'
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 
 const imageStyle = {
@@ -10,11 +11,27 @@ const imageStyle = {
 }
 
 const ReviewSlider = () => {
+    const [isMobile, setIsMobile] = useState(false)
+
+
+    useEffect(() => {
+        const width = window.innerWidth
+
+        if (width >= 768) {
+            setIsMobile(true)
+        }
+        else {
+            setIsMobile(false)
+        }
+        
+    }, [])
+
+
     return (
     <>
 <Swiper
     spaceBetween={40}
-    slidesPerView={window.innerWidth > 768 ? 3 : 1}
+    slidesPerView={isMobile ? 3 : 1}
     onSlideChange={() => console.log('slide change')}
     onSwiper={(swiper) => console.log(swiper)}
 >          
