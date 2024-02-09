@@ -1,13 +1,21 @@
 import WelcomeButtons from '../welcome buttons/WelcomeButtons'
-import './welcometext.scss'
+import {Container,Bold, Text, Title, Wrap, Span, SubText } from './WelcomeText.style'
 
 const WelcomeText = () => {
   return (
-      <section>
-          <p className='motto'>Creativity & artistry</p>
-          <h1 className='title'><span className="light">Exploring the world of</span> <span className="bold">Paint and Style</span></h1>
+      <Container className="w-t-section">
+          <Text className='motto'>Creativity & artistry</Text>
+          <Title className='title'>
+              <Wrap>
+                <Span className="light">Painting the future </Span>
+            </Wrap>
+              <Bold className="bold">
+               Best Painting company
+              </Bold>
+          </Title>
+          <SubText className="w-p">An exclusive paint retail brand</SubText>
      <WelcomeButtons/>
-      </section>
+      </Container>
   )
 }
 

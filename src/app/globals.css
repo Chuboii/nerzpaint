@@ -25,9 +25,24 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background:#FFF8F8;
+  background:white;
+  overflow-x: hidden;
 }
 
+html{
+ scroll-behavior: smooth;
+}
+
+.swiper-slide{
+  color: rgb(224, 231, 253);
+}
+
+
+.swiper-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

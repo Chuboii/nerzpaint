@@ -1,13 +1,14 @@
 import WelcomeImg from "./welcome img/WelcomeImg"
 import WelcomeText from "./welcome text/WelcomeText"
-import './welcomesection.scss'
+import { Container } from './WelcomeSection.style';
+
 
 const WelcomeSection = () => {
   return (
-      <section className="container flex align-middle justify-between">
+      <Container className="containerr flex align-middle justify-between">
           <WelcomeText />
          <WelcomeImg/>
-    </section>
+    </Container>
   )
 }
 
