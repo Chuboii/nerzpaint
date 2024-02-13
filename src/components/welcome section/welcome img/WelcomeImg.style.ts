@@ -32,10 +32,11 @@ export const ImageBox2 = styled.div`
     position: absolute;
     display: flex;
   right: 0rem;
-  @media screen and (max-width:1008px){
-       top: 0rem;
-       right:-1rem;
-       display: none;
-       transform: rotate(45deg);
+  @media screen and (max-width:1100px){
+       width:500px;
+        position:relative;
+       height: 300px;
+       top: 0;
+       right:3rem;
     }
 `

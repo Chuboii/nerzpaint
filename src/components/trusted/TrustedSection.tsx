@@ -8,7 +8,7 @@ const TrustedSection = () => {
         <Wrapper>
           <Title>Who we are?</Title>
     <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quos debitis laborum iusto, eum expedita facere ab aut porro veniam ipsum voluptas id nam? Vero iure totam quam consequatur eum!</Text>
-        <MoreButton>More about us <Icon className="fa fa-arrow-left" aria-hidden="true"></Icon></MoreButton>  
+        <MoreButton>More about us <Icon className="fa fa-arrow-right" aria-hidden="true"></Icon></MoreButton>  
         </Wrapper>
 
         <Grid>

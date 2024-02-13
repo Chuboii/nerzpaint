@@ -6,6 +6,10 @@ export const Container = styled.section`
   padding: 0 2rem;
   position: relative;
   bottom: 4rem;
+  @media screen and (max-width:768px){
+    padding:0 .5rem;
+    bottom: 15rem;
+ }
 `
 export const Wrapper = styled.div`
   padding: 1rem .7rem;
@@ -17,6 +21,10 @@ export const ImageBox = styled.div`
   position: relative;
   width:100%;
   height: 270px;
+
+  @media screen and (max-width:768px){
+   height:200px;
+ }
 `
 export const IconWrap = styled.div`
 
@@ -38,6 +46,10 @@ export const WrapBox = styled.div`
  display: grid;
  grid-template-columns: 1fr 1fr 1fr 1fr;
  margin-top: 2rem;
+
+ @media screen and (max-width:768px){
+    grid-template-columns: 1fr 1fr;
+ }
 `
 export const PriceBox = styled.div`
   display: flex;

@@ -11,6 +11,7 @@ export const Container = styled.section`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow: hidden;
  
 
     &::before{
@@ -22,10 +23,11 @@ export const Container = styled.section`
     }
 
     @media screen and (max-width:768px){
-        padding:.5rem;
-        margin-top: 5rem;
+        padding:10rem .5rem;
         display: flex;
+        height: 120dvh;
         flex-direction: column;
+        width: 100%;
     }
 `
 export const Bg = styled.div`

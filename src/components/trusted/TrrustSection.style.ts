@@ -5,6 +5,12 @@ export const Container = styled.section`
   display: flex;
   justify-content: space-between;
   padding:.5rem 2rem;
+  @media screen and (max-width:768px){
+    flex-direction: column;
+    padding: .5rem ;
+    position: relative;
+    bottom: 12rem;
+ }
 `
 export const Wrapper = styled.div`
  
@@ -17,7 +23,10 @@ export const Title = styled.h1`
 `
 export const Text = styled.p`
  margin: 1.5rem 0;
- width:500px;
+ max-width:500px;
+ @media screen and (max-width:768px){
+   
+ }
 `
 export const MoreButton = styled.button`
 padding: 1rem 1.2rem;
@@ -31,9 +40,15 @@ export const Grid = styled.div`
   width: 100%;
   margin-left: 5rem;
   grid-template-columns: 1fr 1fr;
+  @media screen and (max-width:768px){
+    margin:0;
+    margin-top: 1rem;
+ }
 `
 export const Wrap = styled.div`
-
+@media screen and (max-width:768px){
+    margin:1rem;
+ }
 `
 export const Span = styled.span`
  
