@@ -4,8 +4,8 @@ import styled from "styled-components"
 
 export const Container = styled.section`
     position: absolute;
-    right: 2rem;
-    top: -1.5rem;
+    right: 0rem;
+    top: 0rem;
 
     @media screen and (max-width:1008px){
        position:relative;
@@ -14,7 +14,7 @@ export const Container = styled.section`
 
 `
 export const ImageBox = styled.div`
-   width:520px;
+   max-width:1020px;
     height: 370px;
     position:absolute;
     display: flex;
@@ -26,9 +26,9 @@ export const ImageBox = styled.div`
     }
 `
 export const ImageBox2 = styled.div`
-  top: 10rem;
-      width:250px;
-    height: 250px;
+  top: 7rem;
+      width:750px;
+    height: 450px;
     position: absolute;
     display: flex;
   right: 0rem;

@@ -4,12 +4,12 @@ import styled from 'styled-components'
 
 
 export const Container = styled.nav`
-    padding:1rem 6rem;
+    padding:1rem 4rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: white;
+    background-color: transparent;
     align-items: center;
     display:flex;
     z-index: 10;
@@ -26,9 +26,9 @@ display:flex;
 
 `
 export const Logo = styled.h1`
- font-size: 40px;
+ font-size: 30px;
         font-weight: 800;
-        color: #4E5CC4;
+        color: orangered;
         font-family: 'Single Day', cursive;
         @media screen and (max-width:768px){
         font-size:25px;
@@ -51,6 +51,14 @@ export const Ul = styled.ul`
         height:100dvh;
     }
 `
+export const IconBox = styled.div`
+
+@media screen and (min-width:768px){
+        display:none;
+        
+    }
+`
+
 export const Times = styled.i`
  font-size: 25px;
  padding:1rem;
@@ -109,9 +117,5 @@ align-items:center;
 font-size: 25px;
 margin-left: 1rem;
 
-@media screen and (min-width:768px){
-        display:none;
-        
-    }
 `
 

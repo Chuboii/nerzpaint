@@ -4,7 +4,7 @@ import styled from "styled-components"
 export const Container = styled.section`
   display: flex; 
   justify-content:space-between;
-  margin-top: 11rem;
+  margin-top: 1rem;
   padding: 0 1rem;
   align-items: flex-start;
 

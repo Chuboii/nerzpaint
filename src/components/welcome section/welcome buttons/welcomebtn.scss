@@ -2,8 +2,9 @@
     margin-top: 2rem;
     display: flex;
     align-items: center;
+    z-index: 5;
     .btn{
-        background-color: #4E5CC4;;
+        background-color: #4E5CC4;
         color: white;
         margin-right: 1rem;
         width: 240px;
@@ -40,7 +41,8 @@
 
         .fa-play{
             color: orangered;
-            font-weight: 800;
+            font-weight: 900;
+            font-size:18px;
             margin-right: .8rem;
             background-color: white;
             box-shadow: 0 10px 15px 0 rgba(255, 68, 0, 0.192);

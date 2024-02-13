@@ -3,17 +3,60 @@
 import styled from 'styled-components'
 
 export const Container = styled.section`
-
+  padding: 0 2rem;
+  position: relative;
+  bottom: 4rem;
 `
 export const Wrapper = styled.div`
-
+  padding: 1rem .7rem;
 `
 export const Wrap = styled.div`
 
 `
 export const ImageBox = styled.div`
+  position: relative;
+  width:100%;
+  height: 270px;
+`
+export const IconWrap = styled.div`
 
 `
-export const Title = styled.h1`
+export const Text = styled.div`
+ font-weight: 600;
+ font-size: 22px;
+`
 
+export const Box = styled.div`
+
+`
+export const Box1 = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding:.5rem 0;
+`
+export const WrapBox = styled.div`
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ margin-top: 2rem;
+`
+export const PriceBox = styled.div`
+  display: flex;
+  margin-top: .3rem;
+`
+export const Price = styled.p`
+
+`
+export const Discount = styled.p`
+text-decoration: line-through;
+margin-left: .5rem;
+`
+export const Title = styled.h1`
+  font-size:30px;
+  font-weight: 700;
+  padding:0 1rem;
+  border-left: 4px solid #4E5CC4;
+`
+
+export const Icon = styled.div`
+ color: orange;
 `

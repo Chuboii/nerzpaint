@@ -18,7 +18,7 @@ const QualitySection = () => {
               <Image src="/area-line.png" alt="" fill />
           </ImageBoxLine>
            <Wrap>
-            <Text>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit facere corrupti repudiandae, quas odio sint quis recusandae eaque esse, cupiditate molestiae debitis omnis, quaerat ipsa. Neque explicabo atque veritatis debitis!</Text>      
+            <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure minima amet quibusdam ea culpa nobis dolorum, suscipit molestiae error atque placeat dolor vel! Iusto repellat fugiat reiciendis eveniet! Maiores, blanditiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit facere corrupti repudiandae, quas odio sint quis recusandae eaque esse, cupiditate molestiae debitis omnis, quaerat ipsa. Neque explicabo atque veritatis debitis!</Text>      
        
               <WrapBox>
            <ImageBox>

@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import { Container,Bars,Times,Wrapper, Logo, Box, Icon, List, Ul, Button, Wrap } from './Navbar.style'
+import { Container, IconBox,Bars,Times,Wrapper, Logo, Box, Icon, List, Ul, Button, Wrap } from './Navbar.style'
 
 const linkStyle = {
-  color: '#727695'
+  color: 'white'
 }
 
 const Navbar = () => {
@@ -14,7 +14,10 @@ const Navbar = () => {
               <Logo className="uppercase logo-name">Nerzpaints</Logo>
           </Wrap>     
         <Ul className='flex'>
+      
+        <IconBox>
           <Times className="fa fa-times" aria-hidden="true"></Times>
+          </IconBox>
             <List><Link style={linkStyle} href="/">Home</Link></List>
               <List><Link style={linkStyle} href="/about">About</Link></List>
               <List><Link style={linkStyle} href="/services">Services</Link></List>
@@ -26,10 +29,12 @@ const Navbar = () => {
 </Wrapper>
           <Box className='flex align-middle btn-group'>
               <Button className='contact-btn' type="button">Contact</Button>
+
         <Icon className="fa fa-search" aria-hidden="true"></Icon>
-       
+
+       <IconBox>
         <Bars className="fa fa-bars" aria-hidden="true"></Bars>
-      
+    </IconBox>
       </Box>
     </Container>
   )
