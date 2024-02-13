@@ -25,7 +25,7 @@ export const Container = styled.section`
     @media screen and (max-width:1028px){
         padding:10rem .5rem;
         display: flex;
-        height: 120dvh;
+        height: 100dvh;
         flex-direction: column;
         width: 100%;
     }
