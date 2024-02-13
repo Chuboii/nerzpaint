@@ -14,7 +14,7 @@ export const Container = styled.nav`
     display:flex;
     z-index: 10;
 
-    @media screen and (max-width:768px){
+    @media screen and (max-width:1028px){
         padding:.5rem 1rem;
         justify-content:space-between;
     }
@@ -30,7 +30,7 @@ export const Logo = styled.h1`
         font-weight: 800;
         color: orangered;
         font-family: 'Single Day', cursive;
-        @media screen and (max-width:768px){
+        @media screen and (max-width:1100px){
         font-size:25px;
     }
 `

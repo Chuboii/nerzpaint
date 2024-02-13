@@ -69,6 +69,17 @@ border-radius: 10px;
     top:0;
   }
     }
+
+    @media screen and (min-width:768px) and (max-width:1100px){
+       position:relative;
+       top:1rem;
+       margin: .5rem;
+       width:80%;
+   &:nth-of-type(1){
+    position:relative;
+    top:0;
+  }
+    }
 `
 export const Text = styled.p`
   margin-top:2rem;

@@ -12,13 +12,18 @@ const imageStyle = {
 
 const ReviewSlider = () => {
     const [isMobile, setIsMobile] = useState(false)
-
+    const [isMidDesktop, setIsMidDesktop] = useState(false)
 
     useEffect(() => {
         const width = window.innerWidth
 
-        if (width >= 768) {
-            setIsMobile(true)
+        if (width >=768 && width <= 1100) {
+            setIsMobile(false)
+            setIsMidDesktop(true)
+        }
+        else if(width >=768){
+            setIsMobile(false)
+            setIsMidDesktop(false)
         }
         else {
             setIsMobile(false)
@@ -31,7 +36,7 @@ const ReviewSlider = () => {
     <>
 <Swiper
     spaceBetween={40}
-    slidesPerView={isMobile ? 3 : 1}
+    slidesPerView={isMobile ? 3 : isMidDesktop ? 2: 1}
     onSlideChange={() => console.log('slide change')}
     onSwiper={(swiper) => console.log(swiper)}
 >          

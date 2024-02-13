@@ -9,7 +9,7 @@ export const Container = styled.section`
     flex-direction: column;
     padding: .5rem ;
     position: relative;
-    bottom: 12rem;
+    bottom: 8rem;
  }
 `
 export const Wrapper = styled.div`

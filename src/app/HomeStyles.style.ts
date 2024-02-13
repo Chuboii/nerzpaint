@@ -12,6 +12,7 @@ export const ImageBox = styled.div`
   top: 32rem;
   left: -2rem;
   position: absolute;
+  display: none;
 
 `
 export const ImageBox2 = styled.div`
@@ -19,6 +20,7 @@ export const ImageBox2 = styled.div`
   height: 60px;
   right: -2rem;
   position: absolute;
+  display: none;
   @media screen and (max-width:768px){
     right:0;
     top:0;
@@ -30,6 +32,7 @@ export const ImageBox3 = styled.div`
   height: 40px;
   top: 7rem;
   left: 50%;
+  display: none;
   transform: translate(-50%);
 
   @media screen and (max-width:768px){

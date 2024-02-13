@@ -9,7 +9,9 @@ padding: 0rem 3rem;
 
 
 @media screen and (max-width:768px){
-  padding:.5rem 1rem;
+  padding:.5rem;
+  margin: 0;
+  margin-top: 2rem;
 }
  `
 export const H4 = styled.h4`

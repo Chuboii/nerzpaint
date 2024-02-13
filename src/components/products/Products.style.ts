@@ -8,7 +8,7 @@ export const Container = styled.section`
   bottom: 4rem;
   @media screen and (max-width:768px){
     padding:0 .5rem;
-    bottom: 15rem;
+    bottom: 8rem;
  }
 `
 export const Wrapper = styled.div`

@@ -22,7 +22,7 @@ export const Container = styled.section`
     opacity: .75;
     }
 
-    @media screen and (max-width:768px){
+    @media screen and (max-width:1028px){
         padding:10rem .5rem;
         display: flex;
         height: 120dvh;
