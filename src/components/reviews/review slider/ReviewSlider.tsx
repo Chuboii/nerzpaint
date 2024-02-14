@@ -36,7 +36,7 @@ const ReviewSlider = () => {
     <>
 <Swiper
     spaceBetween={40}
-    slidesPerView={isMobile ? 3 : isMidDesktop ? 2: 1}
+    slidesPerView={isMobile ? 1: isMidDesktop ? 2: 3}
     onSlideChange={() => console.log('slide change')}
     onSwiper={(swiper) => console.log(swiper)}
 >          
