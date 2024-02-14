@@ -26,7 +26,8 @@ const ReviewSlider = () => {
             setIsMidDesktop(false)
         }
         else {
-            setIsMobile(false)
+            setIsMobile(true)
+            setIsMidDesktop(false)
         }
         
     }, [])

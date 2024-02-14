@@ -106,6 +106,7 @@ export const Icon = styled.button`
 
     @media screen and (max-width:768px){
        margin:0;
+       margin-right: .5rem;
     }
 `
 export const Box = styled.div`
@@ -121,7 +122,7 @@ display:flex;
 justify-content: center;
 align-items:center;
 font-size: 25px;
-margin-left: 1rem;
+margin-left: 0rem;
 
 `
 
