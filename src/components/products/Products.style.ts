@@ -55,6 +55,12 @@ export const WrapBox = styled.div`
  @media screen and (max-width:768px){
     grid-template-columns: 1fr 1fr;
  }
+
+ @media screen and (min-width:768px) and (max-width:1100px){
+    grid-template-columns: 1fr 1fr 1fr;
+ }
+
+ 
 `
 export const PriceBox = styled.div`
   display: flex;

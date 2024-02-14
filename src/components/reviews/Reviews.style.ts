@@ -23,6 +23,10 @@ font-size: 40px;
 margin: .5rem 0;
 font-weight: 900;
 margin-bottom: 3rem;
+@media screen and (max-width:768px){
+    font-size:25px;
+    margin-bottom: 1rem;
+ }
  `
 export const Wrapper = styled.div`
   width: 100%;

@@ -26,6 +26,9 @@ const TrustedSection = () => {
 
           <Wrap>
             <Span>Satisfied customers</Span>
+
+
+            
             <Count>940+
             </Count>
           </Wrap>
