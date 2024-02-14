@@ -19,7 +19,7 @@ export const ImageBox = styled.div`
     position:absolute;
     display: flex;
     right: 6rem;
-    top: 0rem;
+    top: 0rem; 
     @media screen and (max-width:1008px){
        position:relative;
        top:1rem;
@@ -32,6 +32,10 @@ export const ImageBox2 = styled.div`
     position: absolute;
     display: flex;
   right: 0rem;
+  transition: all .5s;
+    &:hover{
+      transform: scale(1.02);
+    }
   @media screen and (max-width:1100px){
        width:500px;
         position:relative;

@@ -6,7 +6,7 @@ export const Container = styled.section`
     position: relative;
     width: 100%;
     height: 100dvh;
-    bottom: 2.5rem;
+    bottom: 0;
     background-image: url('/painting-job-500x500.webp');
     background-size: cover;
     background-position: center;

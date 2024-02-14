@@ -1,13 +1,39 @@
+'use client'
 import Link from 'next/link'
 import { Container, IconBox,Bars,Times,Wrapper, Logo, Box, Icon, List, Ul, Button, Wrap } from './Navbar.style'
+import {useState, useEffect} from 'react'
 
-const linkStyle = {
-  color: 'white'
-}
 
 const Navbar = () => {
+  const [isScreenScrolled, setIsScreenScrolled] = useState(false)
+
+  const linkStyle = {
+    color: isScreenScrolled ? 'black' : 'white'
+  }
+
+  useEffect(() => {
+
+    const enableScreenScolling = () => {
+      const windowWidth = window.scrollY
+
+      if (windowWidth >= 508) {
+        setIsScreenScrolled(true)
+      }
+      else{
+        setIsScreenScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", enableScreenScolling)
+
+    return () => {
+    window.removeEventListener("scroll", enableScreenScolling)
+    }
+  }, [isScreenScrolled])
+  
+  
   return (
-      <Container className="navbar flex justify-between align-middle">
+      <Container bg={isScreenScrolled ? "white" : "transparent"} className="navbar flex justify-between align-middle">
          
       <Wrapper className='wrapper flex'>
             <Wrap className='flex'>

@@ -49,11 +49,14 @@ margin: 1rem;
 display: flex;
 flex-direction:column;
 justify-content: center; 
+transition: all .5s;
 align-items: center;
 height: 280px;
 border-radius: 10px;
   box-shadow:0 0 20px 0 rgb(224, 231, 253);
-
+&:hover{
+  transform: scale(1.03);
+}
   &:nth-of-type(1){
     position:relative;
     top:8rem;

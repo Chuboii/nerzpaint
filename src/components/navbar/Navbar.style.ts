@@ -2,14 +2,16 @@
 
 import styled from 'styled-components'
 
-
-export const Container = styled.nav`
+type ContainerType = {
+    bg: string;
+}
+export const Container = styled.nav<ContainerType>`
     padding:1rem 4rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    background-color: transparent;
+    background-color: ${({bg}) => bg};
     align-items: center;
     display:flex;
     z-index: 10;
@@ -29,7 +31,7 @@ export const Logo = styled.h1`
  font-size: 30px;
         font-weight: 800;
         color: orangered;
-        font-family: 'Single Day', cursive;
+        font-family: '';
         @media screen and (max-width:1100px){
         font-size:25px;
     }
@@ -70,8 +72,12 @@ export const Times = styled.i`
 export const List = styled.li`
    margin: 0 .7rem;
     font-size: 16px;
+    transition:all .5s;
     @media screen and (max-width:768px){
         padding:1.2rem 1rem;
+    }
+    &:hover{
+        border-bottom:2px solid orangered;
     }
 `
 export const Button = styled.button`

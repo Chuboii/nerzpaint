@@ -13,9 +13,14 @@ export const Container = styled.section`
 `
 export const Wrapper = styled.div`
   padding: 1rem .7rem;
+  transition:all .5s;
+  &:hover{
+   transform: scale(1.03);
+  }
+
 `
 export const Wrap = styled.div`
-
+   
 `
 export const ImageBox = styled.div`
   position: relative;
@@ -23,7 +28,7 @@ export const ImageBox = styled.div`
   height: 270px;
 
   @media screen and (max-width:768px){
-   height:150px;
+   height:170px;
  }
 `
 export const IconWrap = styled.div`
@@ -71,4 +76,8 @@ export const Title = styled.h1`
 
 export const Icon = styled.div`
  color: orange;
+ 
+ @media screen and (max-width:768px){
+    font-size:14px;
+ }
 `

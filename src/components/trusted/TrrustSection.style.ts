@@ -37,7 +37,7 @@ margin:1rem 0;
 `
 export const Grid = styled.div`
   display: grid;
-  width: 100%;
+  width: 50%;
   margin-left: 5rem;
   grid-template-columns: 1fr 1fr;
   @media screen and (max-width:768px){
