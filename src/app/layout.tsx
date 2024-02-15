@@ -6,7 +6,9 @@ import Script from "next/script";
 import Footer from "@/components/footer/Footer";
 import StyledComponentsRegistry from "./registry";
 import ScrollUp from "@/components/scroll up/ScrollUp";
+import {Body } from './HomeStyles.style'
 const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Nerzpaints",
@@ -18,11 +20,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
+ 
 
   return (
     <html lang="en">
-      <body className={inter.className}  cz-shortcut-listen="true">
+      <Body className={inter.className}  cz-shortcut-listen="true">
       <StyledComponentsRegistry>
         <Navbar />
           {children}
@@ -30,7 +32,7 @@ export default function RootLayout({
           <Footer />
           </StyledComponentsRegistry>
         <Script src="https://kit.fontawesome.com/20b8edb75e.js" crossOrigin="anonymous"></Script>
-        </body>
+        </Body>
 
     </html>
   );

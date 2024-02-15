@@ -15,6 +15,9 @@ export const ImageBox = styled.div`
   display: none;
 
 `
+export const Body = styled.body`
+
+`
 export const ImageBox2 = styled.div`
   width:60px;
   height: 60px;

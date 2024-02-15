@@ -5,6 +5,11 @@ import styled from 'styled-components'
 type ContainerType = {
     bg: string;
 }
+
+type UlType = {
+    position: string;
+}
+
 export const Container = styled.nav<ContainerType>`
     padding:1rem 4rem;
     position: fixed;
@@ -14,7 +19,7 @@ export const Container = styled.nav<ContainerType>`
     background-color: ${({bg}) => bg};
     align-items: center;
     display:flex;
-    z-index: 10;
+    z-index: 100;
 
     @media screen and (max-width:1028px){
         padding:.5rem 1rem;
@@ -39,18 +44,22 @@ export const Logo = styled.h1`
 export const Wrap = styled.div`
 
 `
-export const Ul = styled.ul`
+export const Ul = styled.ul<UlType>`
    margin-left: 2rem;
+    transition:all 1s;
+   position:relative;
 
    @media screen and (max-width:1028px){
         position:fixed;
+    overflow: hidden;
         display:block;
-        display: none;
-        right:0;
+        right:${({position}) => position};
         top:0;
-        width:70%;
+        max-width:300px;
+      
         background:white;
-        height:100dvh;
+        width:100%;
+      bottom:0;
     }
 `
 export const IconBox = styled.div`
@@ -62,9 +71,12 @@ export const IconBox = styled.div`
 `
 
 export const Times = styled.i`
- font-size: 25px;
- padding:1rem;
-
+ font-size: 28px;
+ padding:1rem 1.5rem ;
+ background:red;
+ color:white;
+ margin-bottom:2rem;
+ cursor:pointer;
  @media screen and (min-width: 768px){
     display:none;
  }
@@ -72,12 +84,16 @@ export const Times = styled.i`
 export const List = styled.li`
    margin: 0 .7rem;
     font-size: 16px;
-    transition:all .5s;
-    @media screen and (max-width:768px){
-        padding:1.2rem 1rem;
-    }
+    transition:all .2s;
     &:hover{
         border-bottom:2px solid orangered;
+    }
+    @media screen and (max-width:768px){
+        padding:1.2rem 1rem;
+        &:hover{
+            border:none;
+        border-left:4px solid orangered;
+    }
     }
 `
 export const Button = styled.button`
