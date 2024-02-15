@@ -15,12 +15,12 @@ width: 100%;
 export const Input = styled.input`
   background:#F4F4F4;
   width: 100%;
-margin: .5rem;
+margin: .5rem ;
   padding:.8rem 1rem;
   border-radius: 5px;
 `
 export const Textarea = styled.textarea`
-width: 100%;
+width: 95%;
 height: 200px;
 margin: .5rem;
 background:#F4F4F4;

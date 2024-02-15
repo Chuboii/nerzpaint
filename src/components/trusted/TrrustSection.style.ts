@@ -5,6 +5,7 @@ export const Container = styled.section`
   display: flex;
   justify-content: space-between;
   padding:.5rem 2rem;
+  margin-top:5rem;
   @media screen and (max-width:768px){
     flex-direction: column;
     padding: .5rem ;
@@ -42,6 +43,7 @@ export const Grid = styled.div`
   grid-template-columns: 1fr 1fr;
   @media screen and (max-width:768px){
     margin:0;
+    width: 100%;
     margin-top: 1rem;
  }
 `
@@ -56,6 +58,9 @@ export const Span = styled.span`
 export const Count = styled.div`
   font-size: 50px;
   font-weight: 900;
+  @media screen and (max-width:768px){
+    font-size:35px;
+  }
 `
 export const Icon = styled.i`
  

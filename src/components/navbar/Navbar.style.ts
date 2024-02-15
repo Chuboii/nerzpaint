@@ -42,7 +42,7 @@ export const Wrap = styled.div`
 export const Ul = styled.ul`
    margin-left: 2rem;
 
-   @media screen and (max-width:768px){
+   @media screen and (max-width:1028px){
         position:fixed;
         display:block;
         display: none;
@@ -55,7 +55,7 @@ export const Ul = styled.ul`
 `
 export const IconBox = styled.div`
 
-@media screen and (min-width:768px){
+@media screen and (min-width:1028px){
         display:none;
         
     }
@@ -111,18 +111,20 @@ export const Icon = styled.button`
 `
 export const Box = styled.div`
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1028px){
        display:flex ;
        justify-content: center;
 align-items:center;
     }
 `
-export const Bars = styled.i`
+export const Bars = styled.i<ContainerType>`
 display:flex;
 justify-content: center;
 align-items:center;
-font-size: 25px;
-margin-left: 0rem;
+font-size: 30px;
+margin-left: 1rem;
+color: ${({bg}) => bg};
+
 
 `
 

@@ -5,9 +5,9 @@ import QualityCards from './quality cards/QualityCards'
 const QualitySection = () => {
     return (
         <>
-         <ImageBox>
+         {/* <ImageBox>
         <Image src='/03.png' fill alt=""/>
-      </ImageBox>
+      </ImageBox> */}
       <Container>
           <QualityCards />
 

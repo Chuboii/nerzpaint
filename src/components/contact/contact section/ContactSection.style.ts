@@ -20,6 +20,10 @@ export const ImageBox = styled.div`
 width: 100%;
 position: relative;
 right: 1rem;
+
+@media screen and (max-width:768px){
+   right:0;
+}
 `
 export const Wrapper = styled.div`
 display: flex; 
@@ -39,8 +43,8 @@ export const Box = styled.div`
 right: 2rem;
 
 @media screen and (max-width:768px){
-       width:350px;
-       height:350px;
+       width:300px;
+       height:300px;
        right:0;
     }
 `
@@ -56,6 +60,8 @@ export const BoxWrap = styled.div`
  border: 10px solid rgba(255, 255, 255, .4);
 
  @media screen and (max-width:768px){
-      right: -4rem;
+      right: -1rem;
+      width: 160px;
+      height: 160px;
     }
 `

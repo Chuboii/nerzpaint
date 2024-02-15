@@ -36,11 +36,23 @@ export const ImageBox2 = styled.div`
     &:hover{
       transform: scale(1.02);
     }
-  @media screen and (max-width:1100px){
+    @media screen and (min-width:0) and (max-width:768px){
        width:500px;
         position:relative;
        height: 300px;
        top: 0;
        right:3rem;
     }
+  @media screen and (min-width:768px) and (max-width:1100px){
+    width: 600px;
+    height:400px;
+    position:absolute;
+       right:0rem;
+       top: 9rem;
+       display:none;
+  }
+
+  
+
+
 `

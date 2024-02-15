@@ -59,7 +59,7 @@ const Navbar = () => {
         <Icon className="fa fa-search" aria-hidden="true"></Icon>
 
        <IconBox>
-        <Bars className="fa fa-bars" aria-hidden="true"></Bars>
+        <Bars bg={isScreenScrolled ? "black" : "white"} className="fa fa-bars" aria-hidden="true"></Bars>
     </IconBox>
       </Box>
     </Container>
