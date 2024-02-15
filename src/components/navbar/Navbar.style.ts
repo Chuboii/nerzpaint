@@ -23,6 +23,7 @@ export const Container = styled.nav<ContainerType>`
 
     @media screen and (max-width:1028px){
         padding:.5rem 1rem;
+        overflow: hidden;
         justify-content:space-between;
     }
 
@@ -51,15 +52,14 @@ export const Ul = styled.ul<UlType>`
 
    @media screen and (max-width:1028px){
         position:fixed;
-    overflow: hidden;
+        overflow: hidden;
         display:block;
         right:${({position}) => position};
         top:0;
         max-width:300px;
-      
         background:white;
         width:100%;
-      bottom:0;
+        bottom:0;
     }
 `
 export const IconBox = styled.div`
@@ -88,7 +88,7 @@ export const List = styled.li`
     &:hover{
         border-bottom:2px solid orangered;
     }
-    @media screen and (max-width:768px){
+    @media screen and (max-width:1100px){
         padding:1.2rem 1rem;
         &:hover{
             border:none;

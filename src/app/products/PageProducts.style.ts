@@ -6,7 +6,7 @@ export const Container = styled.section`
   padding: 0 2rem;
   position: relative;
   bottom: 0rem;
-  margin-top:5rem;
+  margin-top:8rem;
   @media screen and (max-width:768px){
     padding:0 .5rem;
     bottom: 8rem;
@@ -20,6 +20,7 @@ export const Wrapper = styled.div`
   }
 
 `
+
 
 export const Wrap = styled.div`
    

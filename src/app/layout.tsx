@@ -7,6 +7,7 @@ import Footer from "@/components/footer/Footer";
 import StyledComponentsRegistry from "./registry";
 import ScrollUp from "@/components/scroll up/ScrollUp";
 import {Body } from './HomeStyles.style'
+
 const inter = Inter({ subsets: ["latin"] });
 
 
@@ -25,14 +26,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Body className={inter.className}  cz-shortcut-listen="true">
-      <StyledComponentsRegistry>
-        <Navbar />
+       <StyledComponentsRegistry>
+         <Navbar />
           {children}
-        <ScrollUp />
+          <ScrollUp />
           <Footer />
-          </StyledComponentsRegistry>
-        <Script src="https://kit.fontawesome.com/20b8edb75e.js" crossOrigin="anonymous"></Script>
-        </Body>
+         </StyledComponentsRegistry>
+      <Script src="https://kit.fontawesome.com/20b8edb75e.js" crossOrigin="anonymous"></Script>
+    </Body>
 
     </html>
   );

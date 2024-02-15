@@ -18,8 +18,7 @@ const Navbar = () => {
   //   setLinkStyle(window.innerWidth <= 1100 && isScreenScrolled ? "black" : "white"
   //   )    
   // },[linkStyle, isScreenScrolled])
-
-
+ 
   useEffect(() => {
     const enableScreenScolling = () => {
       const screenHeight = window.scrollY
@@ -31,7 +30,7 @@ const Navbar = () => {
         setIsScreenScrolled(false)
       }
     }
-
+    
     window.addEventListener("scroll", enableScreenScolling)
 
     return () => {
@@ -42,6 +41,7 @@ const Navbar = () => {
   
   const enableNavbarMobileFunction = useCallback(() => {
     setEnableNavbarMobile(true)
+
   }, [])
 
     
@@ -49,8 +49,13 @@ const Navbar = () => {
     setEnableNavbarMobile(false)
   }, [])
 
+  const scrollToContact = useCallback(() => {
+     
+  }, [])
+
   return (
     <>
+   
       {enableNavbarMobile && <DarkBg />}
       <Container bg={isScreenScrolled ? "white" : "transparent"} className="navbar flex justify-between align-middle">
          
@@ -66,14 +71,12 @@ const Navbar = () => {
             <List><Link className="navbar-links" href="/">Home</Link></List>
               <List><Link className="navbar-links" href="/about">About</Link></List>
               <List><Link className="navbar-links" href="/services">Services</Link></List>
-              <List><Link className="navbar-links" href="/projects">Projects</Link></List>  
+              <List><Link className="navbar-links" href="/products">Products</Link></List>  
                   <List><Link className="navbar-links" href="/reviews">Reviews</Link></List>  
-                  <List><Link className="navbar-links" href="/shop">Shop</Link></List>  
-            <List><Link className="navbar-links" href="/blog">Blog</Link></List>
-          </Ul>
+                      </Ul>
 </Wrapper>
           <Box className='flex align-middle btn-group'>
-              <Button className='contact-btn' type="button">Contact</Button>
+              <Button onClick={scrollToContact} className='contact-btn' type="button">Contact</Button>
 
         <Icon className="fa fa-search" aria-hidden="true"></Icon>
 
