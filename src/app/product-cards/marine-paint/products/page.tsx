@@ -1,20 +1,21 @@
 import Image from 'next/image'
-import React from 'react'
-import {Container,Box1, Text, WrapBox, Title, Wrapper, Wrap, ImageBox, IconWrap, Icon, PriceBox,Price, Discount, Box} from './Products.style'
-import LoadMoreButton from '../buttons/load more btn/LoadMoreButton'
+import {Container,Box1, Text, WrapBox, Title, Wrapper, Wrap, ImageBox, IconWrap, Icon, PriceBox,Price, Discount, Box} from './PageProducts.style'
+import ScrollToTop from '@/components/scroll to top/ScrollToTop'
 
 const ImageStyle = {
   borderRadius: '10px'
 }
 
-const Products = () => {
-
-
-  
+const ProductPage = () => {
   return (
-    <>
-          <Container>
-              <Title>Products</Title>
+      <>
+        <ScrollToTop/>
+        <meta name="All marine paint products" content="view all marine paint products" />
+        <meta property="og:all products" content="My Open Graph Title" />
+        <meta property="og:view all marine paint products - nerzpaints" content="view all marine nerzpaint paint products" />
+        <meta name="keywords" content="paints paint product home comfort painting painter" />
+          <title>All Marine Paint Products - nerzpaints</title>
+        <Container>
           <WrapBox>    
           <Wrapper>
                   <Wrap>
@@ -194,13 +195,11 @@ const Products = () => {
             <Price>N 1000</Price>
             <Discount>N 2000</Discount>
           </PriceBox>  
-        </Wrapper>
-        </WrapBox>
-         
-   <LoadMoreButton/>
+                  </Wrapper>
+              </WrapBox>
           </Container>      
     </>
   )
 }
 
-export default Products
+export default ProductPage

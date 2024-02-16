@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import {Container,Box1, Text, WrapBox, Title, Wrapper, Wrap, ImageBox, IconWrap, Icon, PriceBox,Price, Discount, Box} from './PageProducts.style'
+import ScrollToTop from '@/components/scroll to top/ScrollToTop'
 
 const ImageStyle = {
   borderRadius: '10px'
@@ -8,12 +9,12 @@ const ImageStyle = {
 const ProductPage = () => {
   return (
       <>
-          
-        <meta name="all products" content="view all the paint products" />
+        <ScrollToTop/>
+        <meta name="all home paint products" content="view all home paint products" />
         <meta property="og:all products" content="My Open Graph Title" />
-        <meta property="og:view all paint products - nerzpaints" content="view all nerzpaint paint products" />
+        <meta property="og:view all home paint products - nerzpaints" content="view all nerzpaint paint products" />
         <meta name="keywords" content="paints paint product home comfort painting painter" />
-          <title>All products - nerzpaints</title>
+          <title>All Home Paint products - nerzpaints</title>
         <Container>
           <WrapBox>    
           <Wrapper>

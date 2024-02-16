@@ -4,8 +4,9 @@ import WelcomeSection from "@/components/welcome section/WelcomeSection";
 import Image from "next/image";
 import { ImageBox, Container, ImageBox2, ImageBox3 } from "./HomeStyles.style";
 import QualitySection from "@/components/quality section/QualitySection";
-import Products from "@/components/products/Products";
-import TrustedSection from "@/components/trusted/TrustedSection";
+import WhoWeAreSection from "@/components/who we are/WhoWeAreSection";
+import HomePaintProducts from "@/components/home paint products/HomePaintProducts";
+import MarinePaintProducts from "@/components/marine paint products/MarinePaintProducts";
 
 export default function Home() {
 
@@ -25,8 +26,9 @@ export default function Home() {
       </ImageBox3>
       <WelcomeSection />
       <QualitySection />
-      <Products />
-      <TrustedSection/>
+      <HomePaintProducts />
+      <MarinePaintProducts/>
+      <WhoWeAreSection/>
       <Reviews />
       <ContactSection/>
     </Container>

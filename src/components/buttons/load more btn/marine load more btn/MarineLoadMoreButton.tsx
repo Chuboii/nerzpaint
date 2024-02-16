@@ -1,14 +1,13 @@
 'use client'
-import { Button } from "./LoadMoreButton.style"
+import { Button } from "./MarineLoadMoreButton.style"
 import { useRouter } from "next/navigation"
 
 
-const LoadMoreButton = () => {
+const MarineLoadMoreButton = () => {
     const router = useRouter()
     
     const loadMoreProducts = () => {
-        console.log("click")
-        router.push("/products")
+        router.push("/product-cards/marine-paint/products")
     }
 
 
@@ -17,4 +16,4 @@ const LoadMoreButton = () => {
   )
 }
 
-export default LoadMoreButton
+export default MarineLoadMoreButton

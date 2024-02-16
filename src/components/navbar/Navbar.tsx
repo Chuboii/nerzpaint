@@ -61,7 +61,7 @@ const Navbar = () => {
          
       <Wrapper className='wrapper flex'>
             <Wrap className='flex'>
-              <Logo className="uppercase logo-name">Nerzpaints</Logo>
+              <Link href="/"><Logo className="uppercase logo-name">Nerzpaints</Logo> </Link>
           </Wrap>     
         <Ul position={enableNavbarMobile ? "0" : "-50000px"} className='flex'>
       
@@ -71,7 +71,7 @@ const Navbar = () => {
             <List><Link className="navbar-links" href="/">Home</Link></List>
               <List><Link className="navbar-links" href="/about">About</Link></List>
               <List><Link className="navbar-links" href="/services">Services</Link></List>
-              <List><Link className="navbar-links" href="/products">Products</Link></List>  
+              <List><Link className="navbar-links" href="/product-cards">Products</Link></List>  
                   <List><Link className="navbar-links" href="/reviews">Reviews</Link></List>  
                       </Ul>
 </Wrapper>

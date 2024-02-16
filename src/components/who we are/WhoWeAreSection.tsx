@@ -1,14 +1,15 @@
-import { Container, Wrapper, Title, Icon, Text, MoreButton, Grid, Wrap, Span, Count} from './TrrustSection.style'
+import MoreAboutButton from '../buttons/more about btn/MoreAboutButton'
+import { Container, Wrapper, Title, Text, Grid, Wrap, Span, Count} from './WhoWeAreSection.style'
 
 
-const TrustedSection = () => {
+const WhoWeAreSection = () => {
   return (
       <>
           <Container>
         <Wrapper>
           <Title>Who we are?</Title>
     <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quos debitis laborum iusto, eum expedita facere ab aut porro veniam ipsum voluptas id nam? Vero iure totam quam consequatur eum!</Text>
-        <MoreButton>More about us <Icon className="fa fa-arrow-right" aria-hidden="true"></Icon></MoreButton>  
+      <MoreAboutButton/>
         </Wrapper>
 
         <Grid>
@@ -44,4 +45,4 @@ const TrustedSection = () => {
   )
 }
 
-export default TrustedSection
+export default WhoWeAreSection
