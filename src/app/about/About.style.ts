@@ -21,6 +21,9 @@ export const Wrapper = styled.div`
   display: flex;
   margin-top: 3rem;
  align-items: center;
+ @media screen and (max-width:768px){
+  flex-direction: column;
+ }
 `
 export const WrapText = styled.div`
   margin-right: 2rem;
@@ -66,7 +69,6 @@ export const ImageBox = styled.div`
   height: 450px;
   position: relative;
  left:2rem;
-
 
 `
 export const Text = styled.p`

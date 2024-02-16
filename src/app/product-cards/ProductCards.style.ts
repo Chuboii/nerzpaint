@@ -34,12 +34,17 @@ export const Wrap = styled.div`
 flex-direction:column;
 justify-content: center; 
 align-items: center;
+
+
 `
 export const Wrapper = styled.div`
   display: flex;
   align-items:  center;
   width: 100%;
   justify-content: center;
+  @media screen and (max-width:768px){
+    flex-direction: column;
+  }
 `
 
 export const Text = styled.h1`
