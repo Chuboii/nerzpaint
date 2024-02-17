@@ -85,11 +85,18 @@ export const List = styled.li`
    margin: 0 .7rem;
     font-size: 16px;
     transition:all .2s;
+
+    &:last-child{
+        display:none;
+    }
     &:hover{
         border-bottom:2px solid orangered;
     }
     @media screen and (max-width:1100px){
         padding:1.2rem 1rem;
+        &:last-child{
+        display:block;
+    }
         &:hover{
             border:none;
         border-left:4px solid orangered;

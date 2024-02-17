@@ -9,7 +9,8 @@ import {useRouter} from 'next/navigation'
 const Navbar = () => {
   const [isScreenScrolled, setIsScreenScrolled] = useState(false)
   const [enableNavbarMobile, setEnableNavbarMobile] = useState(false)
- const router = useRouter()
+  const router = useRouter()
+
   // const [linkColor, setLinkColor] = useState("")
   
   // const linkStyle = {
@@ -54,7 +55,7 @@ const Navbar = () => {
      router.push("/contact")
   }, [])
 
-  
+
   return (
     <>
    
@@ -75,7 +76,9 @@ const Navbar = () => {
               <List><Link className="navbar-links" href="/services">Services</Link></List>
               <List><Link className="navbar-links" href="/product-cards">Products</Link></List>  
                   <List><Link className="navbar-links" href="/reviews">Reviews</Link></List>  
-                      </Ul>
+            <List><Link className="navbar-links" href="/contact">Contact</Link></List>
+
+          </Ul>
 </Wrapper>
           <Box className='flex align-middle btn-group'>
               <Button onClick={scrollToContact} className='contact-btn' type="button">Contact</Button>
