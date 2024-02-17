@@ -25,7 +25,7 @@ const AboutPage = () => {
                <LineImage>
                             <Image fill src="/area-line.png" alt="underline"/>
                         </LineImage>
-                        <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aperiam voluptatem corrupti quis ipsum nihil inventore neque, dicta, numquam, perspiciatis voluptatibus harum in ab deserunt officia impedit eveniet tempore. Quis.</Text>    
+                        <Text>Nerzpaint emerges as a dynamic force within the paint industry, offering a comprehensive range of solutions tailored for diverse needs. Specializing in interior and exterior paints, alongside a dedicated line of Marine paints, our company stands at the forefront of innovation and quality craftsmanship. With a commitment to excellence and customer satisfaction, Nerzpaint sets a new standard of reliability and performance in every brushstroke, making spaces come alive with vibrant colors and enduring beauty.</Text>    
                         <Ul>
                             <List>
                               <IconBox>
@@ -68,7 +68,7 @@ const AboutPage = () => {
                             <Image fill src="/area-line.png" alt="underline"/>
                         </LineImage>
                         
-                        <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aperiam voluptatem corrupti quis ipsum nihil inventore neque, dicta, numquam, perspiciatis voluptatibus harum in ab deserunt officia impedit eveniet tempore. Quis.</Text>    
+                        <Text>Get acquainted with our company and offerings through our FAQ section, designed to address common queries.</Text>    
                    
                     <ControlledAccordions/>
                     </WrapText>

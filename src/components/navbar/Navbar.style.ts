@@ -45,7 +45,7 @@ export const Logo = styled.h1`
 export const Wrap = styled.div`
 
 `
-export const Ul = styled.ul<UlType>`
+export const UlDesktop = styled.ul<UlType>`
    margin-left: 2rem;
     transition:all 1s;
    position:relative;
@@ -53,9 +53,25 @@ export const Ul = styled.ul<UlType>`
    @media screen and (max-width:1028px){
         position:fixed;
         overflow: hidden;
+        display:none;
+        right:${({position}) => position};
+        top:0;
+        max-width:300px;
+        background:white;
+        width:100%;
+        bottom:0;
+    }
+`
+
+export const UlMobile = styled.ul<UlType>`
+  display:none;
+   @media screen and (max-width:1028px){
+        position:fixed;
+                overflow: hidden;
         display:block;
         right:${({position}) => position};
         top:0;
+       
         max-width:300px;
         background:white;
         width:100%;
@@ -109,10 +125,16 @@ export const Button = styled.button`
     color: white;
     border-radius: 8px;
     border-radius: 10px;
+    transition:all .5s;
     box-shadow: 0 0 20px 0 rgba(0,0,0, .4);
 
     @media screen and (max-width:768px){
         display:none;
+    }
+
+    &:hover{
+        background: white;
+        color: #4E5CC4;
     }
 `
 export const Icon = styled.button`

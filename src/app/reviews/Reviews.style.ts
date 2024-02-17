@@ -5,7 +5,10 @@ import styled from 'styled-components'
 export const Container = styled.section`
 margin-top: 5rem;
 padding: 0rem 3rem;
-
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 
 
 @media screen and (max-width:768px){
@@ -18,12 +21,22 @@ padding: 0rem 3rem;
 export const Box = styled.div`
    display:grid;
    grid-template-columns: 1fr 1fr 1fr;
-   @media screen and (max-width:1100px){
+   @media screen and (max-width:768px){
+ grid-template-columns: 1fr;
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1100px){
  grid-template-columns: 1fr 1fr;
 
 }
 `
-
+export const LineImageBox = styled.div`
+  position:relative;
+  width:200px;
+  height: 7px;
+  margin-bottom: 2rem;
+`
 export const H4 = styled.h4`
   text-align: center;
  `
@@ -32,7 +45,7 @@ text-align: center;
 font-size: 40px;
 margin: .5rem 0;
 font-weight: 900;
-margin-bottom: 3rem;
+margin-bottom: 1rem;
 @media screen and (max-width:768px){
     font-size:35px;
     margin: 2rem;

@@ -8,20 +8,20 @@ const WhoWeAreSection = () => {
           <Container>
         <Wrapper>
           <Title>Who we are?</Title>
-    <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quos debitis laborum iusto, eum expedita facere ab aut porro veniam ipsum voluptas id nam? Vero iure totam quam consequatur eum!</Text>
+    <Text>Nerzpaint is new and fast rising paint company that deals on interior and exterior paints as well as Marine paints</Text>
       <MoreAboutButton/>
         </Wrapper>
 
         <Grid>
           <Wrap>
             <Span>Products {`we've`} made</Span>
-            <Count>10K
+            <Count>100+
             </Count>
           </Wrap>
 
           <Wrap>
             <Span>Community members</Span>
-            <Count>100K
+            <Count>1K
             </Count>
           </Wrap>
 
@@ -36,7 +36,7 @@ const WhoWeAreSection = () => {
 
           <Wrap>
             <Span>Year founded</Span>
-            <Count>2017
+            <Count>2023
             </Count>
           </Wrap>
         </Grid>

@@ -12,13 +12,13 @@ const QualitySection = () => {
           <QualityCards />
 
           <Box>
-              <Title>Welcome to Nerzpaints</Title>
-            <Intro>Tired of using fake and ineffective paint prodducts?</Intro> 
+              <Title>Welcome to Nerzpaint</Title>
+            <Intro>Tired of using fake and ineffective paint products?</Intro> 
             <ImageBoxLine>
               <Image src="/area-line.png" alt="" fill />
           </ImageBoxLine>
            <Wrap>
-            <Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure minima amet quibusdam ea culpa nobis dolorum, suscipit molestiae error atque placeat dolor vel! Iusto repellat fugiat reiciendis eveniet! Maiores, blanditiis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit facere corrupti repudiandae, quas odio sint quis recusandae eaque esse, cupiditate molestiae debitis omnis, quaerat ipsa. Neque explicabo atque veritatis debitis!</Text>      
+            <Text>Nerzpaint emerges as a dynamic force within the paint industry, offering a comprehensive range of solutions tailored for diverse needs. Specializing in interior and exterior paints, alongside a dedicated line of Marine paints, our company stands at the forefront of innovation and quality craftsmanship. With a commitment to excellence and customer satisfaction, Nerzpaint sets a new standard of reliability and performance in every brushstroke, making spaces come alive with vibrant colors and enduring beauty.</Text>      
        
               <WrapBox>
            <ImageBox>
@@ -26,8 +26,8 @@ const QualitySection = () => {
                 </ImageBox>
 
                 <WrapText>
-                  <Name>Rosalina William</Name>
-                  <Desc>Founder of Nerzpaints</Desc>
+                  <Name>Daniel Emmanuel</Name>
+                  <Desc>Board of Nerzpaint</Desc>
                 </WrapText>
            </WrapBox>     
             </Wrap>
