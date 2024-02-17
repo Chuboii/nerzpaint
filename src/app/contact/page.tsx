@@ -2,15 +2,25 @@ import Image from 'next/image'
 import ContactFormButton from '@/components/buttons/contact form btn/ContactFormButton'
 import {Container, Wrapper,InputGroup, Title, SubText, Form, Textarea, Wrap, Label, Input, Icon, Span,FaqSection, ContactGroup, WrapContact, ImageBox, Text, Contact, FaqTitle, FaqText } from './Contact.style'
 import ControlledAccordions from '@/components/accordion/Accordion'
+import ScrollToTop from '@/components/scroll to top/ScrollToTop'
 
 
 const ContactPage = () => {
   return (
     <>
+          <ScrollToTop />
+        <meta name="Contact nerzpaints" content="Contact Nerzpaints" />
+        <meta property="og:Contact Nerzpaints" content="My Open Graph Title" />
+        <meta property="og:contact Nerzpaints - nerzpaints" content="view all nerzpaint paint products" />
+        <meta name="keywords" content="paints contact information paint product home comfort painting painter" />
+        <title>Contact Nerzpaints - nerzpaints</title>
+
       <Container>
         <Wrapper>
         <Title>{"Don't"} hesitate to <Span>reach out</Span></Title>
-        <SubText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus similique animi sint ea cum, veritatis vero odit id corporis? Sapiente, qui facilis totam delectus cum cumque nisi doloribus voluptatum debitis?</SubText>
+        <SubText>{"At Nerzpaints, we value open communication and are dedicated to providing exceptional customer service. Whether you have questions about our products, need assistance with an order, or want to explore partnership opportunities, we're here to help. Our contact page serves as a gateway for connecting with our team. Feel free to reach out to us using any of the methods below. We look forward to hearing from you and assisting you in any way we can."}
+
+</SubText>
         </Wrapper>
 
         <Form>
@@ -46,8 +56,26 @@ const ContactPage = () => {
             <Image src= "/01.svg" fill alt="nerzpaint address-image"/>
             </ImageBox>
             
-            <Text> Address</Text>
-            <Contact>parker rd. allen, mexico</Contact>
+            <Text>Office Address</Text>
+            <Contact>No. 4 babatope bejide cresent lekki phase 1, off fola osibo</Contact>
+          </WrapContact>
+
+          <WrapContact>
+            <ImageBox>
+            <Image src= "/01.svg" fill alt="nerzpaint address-image"/>
+            </ImageBox>
+            
+            <Text> Branch Address</Text>
+            <Contact>No. 21 Bekwere wosy street D-line port harcourt</Contact>
+          </WrapContact>
+
+          <WrapContact>
+            <ImageBox>
+            <Image src= "/01.svg" fill alt="nerzpaint address-image"/>
+            </ImageBox>
+            
+            <Text> Branch Address</Text>
+            <Contact>No. 1 Ivara Esu str. off Ndidem Usang Iso Marian Rd. Calabar</Contact>
           </WrapContact>
 
           <WrapContact>
@@ -56,7 +84,7 @@ const ContactPage = () => {
             </ImageBox>
             
             <Text> Email </Text>
-            <Contact>hello@gmail.com</Contact>
+            <Contact>nerzpaints@gmail.com</Contact>
           </WrapContact>
 
           <WrapContact>
@@ -65,7 +93,7 @@ const ContactPage = () => {
             </ImageBox>
             
             <Text> Phone</Text>
-            <Contact>(+234) 8909 290 0290</Contact>
+            <Contact>(+234) 813 8321 213</Contact>
           </WrapContact>
         </ContactGroup>
 

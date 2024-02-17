@@ -25,7 +25,7 @@ export const Title = styled.h1`
  }
 `
 export const SubText = styled.p`
- max-width: 500px;
+ max-width: 700px;
  text-align: center;
  margin-top: 1rem;
 `
@@ -107,6 +107,7 @@ export const WrapContact = styled.div`
   justify-content:center;
   flex-direction:column;
   align-items: center;
+  margin:1.5rem;
   
   &:last-child{
     border:none;
@@ -127,7 +128,8 @@ export const Text = styled.p`
 
 `
 export const Contact = styled.div`
-  
+  max-width:300px;
+  text-align:center;
 `
 export const FaqTitle = styled.p`
   text-align:center;

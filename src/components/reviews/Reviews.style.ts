@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
 margin-top: 5rem;
-padding: 0rem 3rem;
+padding: 0rem 2rem;
 
 
 
@@ -57,7 +57,7 @@ export const Text = styled.p`
  `
 
 export const Comment = styled.p`
-  color: gray;
+  color: rgba(0,0,0,.7);
   text-align: center;
   margin: 1rem 0;
   word-wrap: break-word; 
