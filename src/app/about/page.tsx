@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import ControlledAccordions from '@/components/accordion/Accordion'
-import {Container,ImageBoxFaq,Ul,Icon, List,Title,WrapImage, ImageBox2,LineImage ,Wrapper, WrapText, ImageBox, Text,SubTitle} from './About.style'
+import {Container,ImageBoxFaq,Ul,Icon, List,Title,WrapImage, ImageBox2,LineImage ,Wrapper, WrapText,IconBox, ImageBox, Text,SubTitle} from './About.style'
 import ScrollToTop from '@/components/scroll to top/ScrollToTop'
 
 const imageStyle = {
@@ -28,16 +28,20 @@ const AboutPage = () => {
                         <Text>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur aperiam voluptatem corrupti quis ipsum nihil inventore neque, dicta, numquam, perspiciatis voluptatibus harum in ab deserunt officia impedit eveniet tempore. Quis.</Text>    
                         <Ul>
                             <List>
-                              <Icon className="fa fa-check" aria-hidden="true"></Icon>
+                              <IconBox>
+                              <Icon className="fa fa-check" aria-hidden="true"></Icon> </IconBox>
                                 We deliver quality and durable products</List>
                             <List>
-                            <Icon className="fa fa-check" aria-hidden="true"></Icon>
+                            <IconBox>
+                            <Icon className="fa fa-check" aria-hidden="true"></Icon> </IconBox>
                                 New and enhanced formulars for better use</List>
                             <List>
-                            <Icon className="fa fa-check" aria-hidden="true"></Icon>
+                            <IconBox>
+                            <Icon className="fa fa-check" aria-hidden="true"></Icon> </IconBox>
                                 Cheap and affordable</List>
                             <List>
-                            <Icon className="fa fa-check" aria-hidden="true"></Icon>
+                            <IconBox>
+                            <Icon className="fa fa-check" aria-hidden="true"></Icon> </IconBox>
                                 Turn your place into your desired taste using varieties of colors</List>
                    </Ul>
                     </WrapText>    

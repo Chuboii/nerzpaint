@@ -3,12 +3,13 @@ import Link from 'next/link'
 import { Container, IconBox,Bars,Times,Wrapper, Logo, Box, Icon, List, Ul, Button, Wrap } from './Navbar.style'
 import {useState, useEffect, useCallback} from 'react'
 import DarkBg from '../dark bg/DarkBg'
+import {useRouter} from 'next/navigation'
 
 
 const Navbar = () => {
   const [isScreenScrolled, setIsScreenScrolled] = useState(false)
   const [enableNavbarMobile, setEnableNavbarMobile] = useState(false)
-
+ const router = useRouter()
   // const [linkColor, setLinkColor] = useState("")
   
   // const linkStyle = {
@@ -50,9 +51,10 @@ const Navbar = () => {
   }, [])
 
   const scrollToContact = useCallback(() => {
-     
+     router.push("/contact")
   }, [])
 
+  
   return (
     <>
    

@@ -4,6 +4,10 @@ import styled from "styled-components"
 export const Container = styled.section`
   margin-top: 9rem;
 
+
+  @media screen and (max-width:768px){
+   padding:0 1rem;
+  }
 `
 export const Card = styled.div`
   max-width: 300px;
@@ -22,6 +26,12 @@ border-radius: 10px;
 &:hover{
   transform: scale(1.03);
 }
+
+
+@media screen and (max-width:768px){
+  max-width: 370px;
+  width: 100%;
+  }
 `
 export const LineImageBox = styled.div`
   position: relative;
