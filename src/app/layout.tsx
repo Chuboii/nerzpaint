@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Nerzpaints",
+  title: "Nerzpaints Industries - Interior and Exterior Paint Designs",
   description: "Nerzpaint emerges as a dynamic force within the paint industry. Find a colour right for your interior and exterior designs",
 };
 
