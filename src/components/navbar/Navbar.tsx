@@ -110,7 +110,6 @@ const Navbar = () => {
                   <List><Link onClick={disableNavbarMobileFunction}  style={linkStyleMobile} className="navbar-links" href="/reviews">Reviews</Link></List>  
             <List><Link onClick={disableNavbarMobileFunction}  style={linkStyleMobile}  className="navbar-links" href="/contact">Contact</Link></List>
 
-            <List><Link onClick={disableNavbarMobileFunction}  style={linkStyleMobile}  className="navbar-links" href="/contact">Shop</Link></List>
 
           </UlMobile>
 
