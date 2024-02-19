@@ -4,15 +4,16 @@ import { Container } from './DarkBg.style'
 
 type DarkBgType = {
     disableNavbar: (arg0 : boolean) => void;
+    overflow: string;
 }
 
-const DarkBg = ({disableNavbar} : DarkBgType) => {
+const DarkBg = ({disableNavbar, overflow} : DarkBgType) => {
 
 const closeMobileNavbar = () => disableNavbar(false)
 
     return (
         <>
-            <GlobalStyles overflow="hidden"/>
+        <GlobalStyles overflow={overflow} />
         <Container onClick={closeMobileNavbar}>
                 
         </Container>

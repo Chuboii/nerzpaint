@@ -90,9 +90,8 @@ const Navbar = () => {
 
   return (
     <>
-      <GlobalStyles overflow={enableNavbarMobile ? "scroll" : "" } />
-   
-      {enableNavbarMobile && <DarkBg disableNavbar={setEnableNavbarMobile} />}
+
+      {enableNavbarMobile && <DarkBg disableNavbar={setEnableNavbarMobile} overflow="hidden"/>}
       <Container bg={isScreenScrolled ? "white" : "transparent"} className="navbar flex justify-between align-middle">
          
       <Wrapper className='wrapper flex'>
