@@ -29,25 +29,28 @@ const Footer: FC = () => {
 
       <LinkWrap>
         <Text>NEED HELP?</Text>
-        <Link style={linkStyle} href="/chat">Chat with us</Link>
-        <Link style={linkStyle} href="/contact-us">Contact Us</Link>
+        <Link style={linkStyle} href="/contact">Contact Us</Link>
       </LinkWrap>
       <LinkWrap>
         <Text>USEFUl LINKS</Text>
-        <Link style={linkStyle} href="/service-center">Products</Link>
-        <Link style={linkStyle} href="/how-to-shop">Shop</Link>
+        <Link style={linkStyle} href="/product-cards">Products</Link>
         <Link style={linkStyle} href="/delivery-options">Delivery options and timelines</Link>
       </LinkWrap>
       <LinkWrap>
         <Text>ABOUT NERZPAINTS</Text>
-        <Link style={linkStyle} href="/about-us">About us</Link>
+        <Link style={linkStyle} href="/about">About us</Link>
               <Box>
+                <a title='nerzpaint tiktok page' href="https://www.tiktok.com/@nerzpaints?_t=8jttOtZUxgD&_r=1">
               <IconBox>
-              <Icons className="fa fa-facebook" aria-hidden="true"></Icons>
-                </IconBox>
+              <Icons className="fa fa-tiktok" aria-hidden="true"></Icons>
+                  </IconBox>
+                </a>
+                
+              <a title='nerzpaint instagram page' href='https://www.instagram.com/nerz_paint?igsh=ZzRzdWxkMDUzczl4&utm_source=qr'>
                 <IconBox>
                   <Icons className="fa fa-instagram" aria-hidden="true"></Icons>
-              </IconBox>
+                  </IconBox>
+                </a>
               <IconBox>
                 <Icons className="fa fa-linkedin" aria-hidden="true"></Icons>
               </IconBox>
@@ -60,9 +63,7 @@ const Footer: FC = () => {
       </LinkWrap>
       <LinkWrap>
         <Text>Resources</Text>
-        <Link style={linkStyle} href="/sell-on-snapcart">Blog</Link>
-        <Link style={linkStyle} href="/vendor-hub">Reviews</Link>
-      
+        <Link style={linkStyle} href="/reviews">Reviews</Link>
       </LinkWrap>
     </Nav>
         </FooterContainer>

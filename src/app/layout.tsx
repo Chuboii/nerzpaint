@@ -7,6 +7,7 @@ import Footer from "@/components/footer/Footer";
 import StyledComponentsRegistry from "./registry";
 import ScrollUp from "@/components/scroll up/ScrollUp";
 import {Body } from './HomeStyles.style'
+import { GlobalStyles } from "./globalStyles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +31,8 @@ export default function RootLayout({
       <meta property="og:description" content="Nerzpaint emerges as a dynamic force within the paint industry. Find a colour right for your interior and exterior designs."/>
       <meta property="og:url" content="https://nerzpaints.com"/>
       <Body className={inter.className} cz-shortcut-listen="true">
-       <StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <GlobalStyles overflow=""/>
          <Navbar />
           {children}
           <ScrollUp />

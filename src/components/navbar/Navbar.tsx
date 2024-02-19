@@ -14,7 +14,9 @@ const Navbar = () => {
   const [linkStyle, setLinkStyle] = useState({})
 
   const linkStyleMobile = {
-    color:'black'
+    color: 'black',
+    display:"inline-block",
+    width:"100%"
   }
 
   useEffect(() => {
@@ -82,30 +84,31 @@ const Navbar = () => {
      router.push("/contact")
   }, [router])
 
+  
 
   return (
     <>
    
-      {enableNavbarMobile && <DarkBg />}
+      {enableNavbarMobile && <DarkBg disableNavbar={setEnableNavbarMobile} />}
       <Container bg={isScreenScrolled ? "white" : "transparent"} className="navbar flex justify-between align-middle">
          
       <Wrapper className='wrapper flex'>
             <Wrap className='flex'>
-              <Link href="/"><Logo className="uppercase logo-name">Nerzpaints</Logo> </Link>
+              <Link onClick={disableNavbarMobileFunction} href="/"><Logo className="uppercase logo-name">Nerzpaints</Logo> </Link>
           </Wrap>     
         <UlMobile position={enableNavbarMobile ? "0" : "-50000px"} className='flex'>
       
         <IconBox>
           <Times onClick={disableNavbarMobileFunction} className="fa fa-times" aria-hidden="true"></Times>
           </IconBox>
-             <List><Link style={linkStyleMobile} className="navbar-links" href="/">Home</Link></List>
-              <List><Link  style={linkStyleMobile} className="navbar-links" href="/about">About</Link></List>
-              {/* <List><Link style={linkStyle} className="navbar-links" href="/services">Services</Link></List> */}
-              <List><Link  style={linkStyleMobile} className="navbar-links" href="/product-cards">Products</Link></List>  
-                  <List><Link  style={linkStyleMobile} className="navbar-links" href="/reviews">Reviews</Link></List>  
-            <List><Link  style={linkStyleMobile}  className="navbar-links" href="/contact">Contact</Link></List>
+             <List><Link onClick={disableNavbarMobileFunction} style={linkStyleMobile} className="navbar-links" href="/">Home</Link></List>
+              <List><Link onClick={disableNavbarMobileFunction}  style={linkStyleMobile} className="navbar-links" href="/about">About</Link></List>
+              {/* <List><Link onClick={disableNavbarMobileFunction} style={linkStyle} className="navbar-links" href="/services">Services</Link></List> */}
+              <List><Link onClick={disableNavbarMobileFunction}  style={linkStyleMobile} className="navbar-links" href="/product-cards">Products</Link></List>  
+                  <List><Link onClick={disableNavbarMobileFunction}  style={linkStyleMobile} className="navbar-links" href="/reviews">Reviews</Link></List>  
+            <List><Link onClick={disableNavbarMobileFunction}  style={linkStyleMobile}  className="navbar-links" href="/contact">Contact</Link></List>
 
-            <List><Link  style={linkStyleMobile}  className="navbar-links" href="/contact">Shop</Link></List>
+            <List><Link onClick={disableNavbarMobileFunction}  style={linkStyleMobile}  className="navbar-links" href="/contact">Shop</Link></List>
 
           </UlMobile>
 
@@ -116,14 +119,14 @@ const Navbar = () => {
       <IconBox>
         <Times onClick={disableNavbarMobileFunction} className="fa fa-times" aria-hidden="true"></Times>
         </IconBox>
-           <List><Link style={linkStyle} className="navbar-links" href="/">Home</Link></List>
-            <List><Link style={linkStyle} className="navbar-links" href="/about">About</Link></List>
-            {/* <List><Link style={linkStyle} className="navbar-links" href="/services">Services</Link></List> */}
-            <List><Link style={linkStyle} className="navbar-links" href="/product-cards">Products</Link></List>  
-                <List><Link style={linkStyle} className="navbar-links" href="/reviews">Reviews</Link></List>  
-          <List><Link style={linkStyle} className="navbar-links" href="/contact">Contact</Link></List>
+           <List><Link onClick={disableNavbarMobileFunction} style={linkStyle} className="navbar-links" href="/">Home</Link></List>
+            <List><Link onClick={disableNavbarMobileFunction} style={linkStyle} className="navbar-links" href="/about">About</Link></List>
+            {/* <List><Link onClick={disableNavbarMobileFunction} style={linkStyle} className="navbar-links" href="/services">Services</Link></List> */}
+            <List><Link onClick={disableNavbarMobileFunction} style={linkStyle} className="navbar-links" href="/product-cards">Products</Link></List>  
+                <List><Link onClick={disableNavbarMobileFunction} style={linkStyle} className="navbar-links" href="/reviews">Reviews</Link></List>  
+          <List><Link onClick={disableNavbarMobileFunction} style={linkStyle} className="navbar-links" href="/contact">Contact</Link></List>
 {/* 
-          <List><Link style={linkStyle} className="navbar-links" href="/shop">Shop</Link></List> */}
+          <List><Link onClick={disableNavbarMobileFunction} style={linkStyle} className="navbar-links" href="/shop">Shop</Link></List> */}
 
         </UlDesktop>
 </Wrapper>
@@ -132,8 +135,9 @@ const Navbar = () => {
 
        
        <IconBox>
-        <Bars onClick={enableNavbarMobileFunction} bg={isScreenScrolled ? "black" : "white"} className="fa fa-bars" aria-hidden="true"></Bars>
-    </IconBox>
+        <Bars onClick={enableNavbarMobileFunction} style={linkStyle} className="fa fa-bars" aria-hidden="true"></Bars>
+        </IconBox>
+          
       </Box>
       </Container>
     </>

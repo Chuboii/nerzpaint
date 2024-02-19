@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {Container,Box1, Text, WrapBox, Title, Wrapper, Wrap, ImageBox, IconWrap, Icon, PriceBox,Price, Discount, Box} from './PageProducts.style'
+import {Container,Box1,LineImage, WrapTitle, Text, WrapBox, Title, Wrapper, Wrap, ImageBox, IconWrap, Icon, PriceBox,Price, Discount, Box} from './PageProducts.style'
 import ScrollToTop from '@/components/scroll to top/ScrollToTop'
 
 const ImageStyle = {
@@ -15,7 +15,14 @@ const ProductPage = () => {
         <meta property="og:view all home paint products - nerzpaints" content="view all nerzpaint paint products" />
         <meta name="keywords" content="paints paint product home comfort painting painter" />
           <title>All Home Paint products - nerzpaints</title>
-        <Container>
+        
+      <Container>
+        <WrapTitle>
+        <Title>Home Paint Products</Title>  
+        <LineImage>
+                      <Image fill src="/area-line.png" alt="underline"/>
+            </LineImage>
+        </WrapTitle>
           <WrapBox>    
           <Wrapper>
                   <Wrap>

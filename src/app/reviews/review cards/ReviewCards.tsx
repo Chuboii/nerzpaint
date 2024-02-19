@@ -13,7 +13,8 @@ const ReviewCards = () => {
     <>
   <Box>
                 <SwiperSlide>
-                    <Wrap>                <Icon className="fa fa-quote-right"></Icon>
+                    <Wrap>
+                        <Icon className="fa fa-quote-right"></Icon>
                 <Comment>{"I'm so glad I chose Nerzpaint for my painting project. Their customer service was excellent, and the staff helped me select the perfect colors for my home. The paint quality is top-notch, and the results speak for themselves. My house looks fresh and modern, thanks to Nerzpaint's high-quality products!"}</Comment>
                 <Name>Alex Rapheal</Name>
                 <ImageBox>
@@ -23,7 +24,8 @@ const ReviewCards = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-                    <Wrap>                <Icon className="fa fa-quote-right"></Icon>
+                    <Wrap>
+                        <Icon className="fa fa-quote-right"></Icon>
                 <Comment>{"Nerzpaint's products are simply fantastic! I recently painted my kitchen cabinets with their specialty paints, and the transformation was incredible. The paint dried quickly to a smooth, hard finish, and it has held up remarkably well to daily wear and tear. I'm thrilled with the results and would recommend Nerzpaint to anyone looking for high-quality paints."}</Comment>
                 <Name>Alex Rapheal</Name>
                 <ImageBox>
@@ -45,9 +47,9 @@ const ReviewCards = () => {
                 <SwiperSlide>
                     <Wrap>
                         <Icon className="fa fa-quote-right"></Icon>
-                        <Comment>{"I recently used Nerzpaint's exterior paints for my house, and I couldn't be happier with the results. The paint provided excellent protection against the elements, and the colors have remained bright and fade-resistant even after months of exposure to sun and rain. I'm impressed by the durability and quality of Nerzpaint's products!"}
-                            <Name>Nicky Bianca</Name>
-                        </Comment>
+                        <Comment>{"I recently used Nerzpaint's exterior paints for my house, and I couldn't be happier with the results. The paint provided excellent protection against the elements, and the colors have remained bright and fade-resistant even after months of exposure to sun and rain. I'm impressed by the durability and quality of Nerzpaint's products!"}</Comment>
+                        <Name>Nicky Bianca</Name>
+                     
                 <ImageBox>
                     <Image style={imageStyle} fill src={"/images (13).jpeg"} alt=''/>
                         </ImageBox>

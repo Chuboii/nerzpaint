@@ -66,10 +66,11 @@ export const Li = styled.li`
 
 `
 export const Button = styled.button`
-background-color: #F68D48;
+background-color: orangered;
 color: white;
 margin-left:.5rem;
 padding:.5rem;
+border-radius: 5px;
 `
 export const Input = styled.input`
 padding:.7rem 1rem;

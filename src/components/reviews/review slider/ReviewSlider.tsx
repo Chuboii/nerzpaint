@@ -74,9 +74,9 @@ const ReviewSlider = () => {
                 <SwiperSlide>
                     <Wrap>
                         <Icon className="fa fa-quote-right"></Icon>
-                        <Comment>{"I recently used Nerzpaint's exterior paints for my house, and I couldn't be happier with the results. The paint provided excellent protection against the elements, and the colors have remained bright and fade-resistant even after months of exposure to sun and rain. I'm impressed by the durability and quality of Nerzpaint's products!"}
+                        <Comment>{"I recently used Nerzpaint's exterior paints for my house, and I couldn't be happier with the results. The paint provided excellent protection against the elements, and the colors have remained bright and fade-resistant even after months of exposure to sun and rain. I'm impressed by the durability and quality of Nerzpaint's products!"}</Comment>
                             <Name>Nicky Bianca</Name>
-                        </Comment>
+                      
                 <ImageBox>
                     <Image style={imageStyle} objectFit="cover" objectPosition="top" fill src={"/download (4).jpeg"} alt=''/>
                         </ImageBox>

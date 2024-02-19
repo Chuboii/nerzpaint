@@ -80,6 +80,7 @@ export const UlMobile = styled.ul<UlType>`
 `
 export const IconBox = styled.div`
 
+
 @media screen and (min-width:1028px){
         display:none;
         
@@ -162,13 +163,12 @@ export const Box = styled.div`
 align-items:center;
     }
 `
-export const Bars = styled.i<ContainerType>`
+export const Bars = styled.i`
 display:flex;
 justify-content: center;
 align-items:center;
 font-size: 30px;
 margin-left: 1rem;
-color: ${({bg}) => bg};
 
 
 `

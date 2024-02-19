@@ -20,7 +20,18 @@ export const Wrapper = styled.div`
   }
 
 `
-
+export const LineImage = styled.div`
+  position: relative;
+  height:6px;
+  margin-top: 1rem;
+  width: 200px;
+`
+export const  WrapTitle = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+`
 
 export const Wrap = styled.div`
    
@@ -80,7 +91,7 @@ export const Title = styled.h1`
   font-size:30px;
   font-weight: 700;
   padding:0 1rem;
-  border-left: 4px solid #4E5CC4;
+
 `
 
 export const Icon = styled.div`

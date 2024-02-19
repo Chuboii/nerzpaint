@@ -1,12 +1,19 @@
-import {Container} from './DarkBg.style'
+'use client'
+import { GlobalStyles } from '@/app/globalStyles';
+import { Container } from './DarkBg.style'
 
+type DarkBgType = {
+    disableNavbar: (arg0 : boolean) => void;
+}
 
+const DarkBg = ({disableNavbar} : DarkBgType) => {
 
-const DarkBg = () => {
-   
+const closeMobileNavbar = () => disableNavbar(false)
+
     return (
         <>
-        <Container>
+            <GlobalStyles overflow="hidden"/>
+        <Container onClick={closeMobileNavbar}>
                 
         </Container>
         </>

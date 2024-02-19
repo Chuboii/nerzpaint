@@ -3,9 +3,11 @@ import ControlledAccordions from '@/components/accordion/Accordion'
 import {Container,ImageBoxFaq,Ul,Icon, List,Title,WrapImage, ImageBox2,LineImage ,Wrapper, WrapText,IconBox, ImageBox, Text,SubTitle} from './About.style'
 import ScrollToTop from '@/components/scroll to top/ScrollToTop'
 
+
 const imageStyle = {
     borderRadius: "50px 50px 0 100px"
 }
+
 const AboutPage = () => {
     return (
         <>            

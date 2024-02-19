@@ -3,6 +3,7 @@ import ContactFormButton from '@/components/buttons/contact form btn/ContactForm
 import {Container, Wrapper,InputGroup, Title, SubText, Form, Textarea, Wrap, Label, Input, Icon, Span,FaqSection, ContactGroup, WrapContact, ImageBox, Text, Contact, FaqTitle, FaqText } from './Contact.style'
 import ControlledAccordions from '@/components/accordion/Accordion'
 import ScrollToTop from '@/components/scroll to top/ScrollToTop'
+import { sendMail } from '@/lib/mail/mail'
 
 
 const ContactPage = () => {
@@ -28,7 +29,7 @@ const ContactPage = () => {
             <Label>Full name</Label>
             <InputGroup>
             <Icon className="fa fa-user-circle-o" aria-hidden="true"></Icon>
-            <Input placeholder="Your name" />
+            <Input placeholder="Your name" name="name" />
             </InputGroup>
           </Wrap>
 
@@ -36,7 +37,7 @@ const ContactPage = () => {
             <Label>Email address</Label>
             <InputGroup>
             <Icon className="fa fa-mail-forward" aria-hidden="true"></Icon> 
-            <Input placeholder="Your email" />
+            <Input placeholder="Your email" name="email"/>
               </InputGroup>
          </Wrap>
 
@@ -44,7 +45,7 @@ const ContactPage = () => {
             <Label>Your Message</Label>
             <InputGroup>
             <Icon className="fa fa-comment" aria-hidden="true"></Icon> 
-              <Textarea placeholder="Your message"></Textarea>
+              <Textarea placeholder="Your message" name="message"></Textarea>
               </InputGroup>
           </Wrap>
           <ContactFormButton/>
