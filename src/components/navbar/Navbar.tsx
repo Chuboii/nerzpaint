@@ -5,6 +5,7 @@ import {useState, useEffect, useCallback} from 'react'
 import DarkBg from '../dark bg/DarkBg'
 import {useRouter} from 'next/navigation'
 import { usePathname } from 'next/navigation'
+import { GlobalStyles } from '@/app/globalStyles'
 
 const Navbar = () => {
   const [isScreenScrolled, setIsScreenScrolled] = useState(false)
@@ -85,9 +86,11 @@ const Navbar = () => {
   }, [router])
 
   
+  
 
   return (
     <>
+      <GlobalStyles overflow={enableNavbarMobile ? "scroll" : "" } />
    
       {enableNavbarMobile && <DarkBg disableNavbar={setEnableNavbarMobile} />}
       <Container bg={isScreenScrolled ? "white" : "transparent"} className="navbar flex justify-between align-middle">
