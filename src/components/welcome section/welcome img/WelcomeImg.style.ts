@@ -30,10 +30,11 @@ export const ImageBox2 = styled.div`
       width:450px;
     height: 250px;
     position: absolute;
-    display:none;
+
     /* transform:rotate(180deg); */
     display: flex;
   right: 0rem;
+  display:none;
   transition: all .5s;
     &:hover{
       transform: rotate(180deg) scale(1.02);
