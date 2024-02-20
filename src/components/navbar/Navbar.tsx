@@ -41,6 +41,16 @@ const Navbar = () => {
         color: "black"
       })
     }
+    else if (pathname === "/product-cards/home-paint/products") {
+      setLinkStyle({
+        color: "black"
+      })
+    }
+    else if (pathname === "/product-cards/marine-paint/products") {
+      setLinkStyle({
+        color: "black"
+      })
+    }    
     else {
       setLinkStyle({
         color: isScreenScrolled ? "black" : 'white'
