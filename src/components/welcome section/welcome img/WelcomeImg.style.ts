@@ -26,15 +26,17 @@ export const ImageBox = styled.div`
     }
 `
 export const ImageBox2 = styled.div`
-  top: 7rem;
-      width:750px;
-    height: 450px;
+  top: 8rem;
+      width:450px;
+    height: 250px;
     position: absolute;
+    display:none;
+    /* transform:rotate(180deg); */
     display: flex;
   right: 0rem;
   transition: all .5s;
     &:hover{
-      transform: scale(1.02);
+      transform: rotate(180deg) scale(1.02);
     }
     @media screen and (min-width:0) and (max-width:768px){
        width:500px;

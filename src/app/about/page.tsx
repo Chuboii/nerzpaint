@@ -49,7 +49,7 @@ const AboutPage = () => {
                     </WrapText>    
                     <WrapImage>
                     <ImageBox>
-                    <Image style={imageStyle} src="/service-right.jpg" alt="nerzpaint about image" fill/>
+                    <Image style={imageStyle} src="/WhatsApp Image 2024-02-20 at 15.01.38_0c1b61a3.jpg" alt="nerzpaint about image" fill/>
                         </ImageBox>
 
                         <ImageBox2>
@@ -60,7 +60,7 @@ const AboutPage = () => {
 
                 <Wrapper>
                     <ImageBoxFaq>
-                        <Image style={imageStyle} src="/progress-count.jpg" alt="nerzpaints questions about image" fill />
+                        <Image style={imageStyle} src="/WhatsApp Image 2024-02-20 at 15.01.37_a710a663.jpg" alt="nerzpaints questions about image" fill />
                     </ImageBoxFaq>
 
                     <WrapText>

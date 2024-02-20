@@ -8,7 +8,7 @@ const WelcomeImg = () => {
                 <Container className='welcome-img-section'>
 
       <ImageBox2 className="thir-img-bx">
-          <Image className='sub-img' src={'/5a2969df87bbb0.993868451512663519556.png'} fill alt='s'/>
+          <Image className='sub-img' src={'/WhatsApp Image 2024-02-20 at 15.01.38_0c1b61a3.jpg'} fill alt='s'/>
       </ImageBox2>
             </Container>
         </>

@@ -26,7 +26,7 @@ export const LineImage = styled.div`
 export const Wrapper = styled.div`
   display: flex;
   margin-top: 3rem;
- align-items: center;
+ 
  @media screen and (max-width:768px){
   flex-direction: column;
  }
@@ -84,15 +84,17 @@ width:400px;
 `
 
 export const ImageBox = styled.div`
-  max-width:450px;
+  max-width:550px;
   width:100%;
   height: 450px;
   position: relative;
- left:2rem;
+  top:5rem;
+ 
  
   @media screen and (max-width:768px){
     margin: 0;
     left: 0;
+    top:0;
   }
 `
 export const Text = styled.p`
