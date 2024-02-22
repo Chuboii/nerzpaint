@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import ControlledAccordions from '@/components/accordion/Accordion'
+import ControlledAccordions from '@/components/faq/Accordion'
 import {Container,ImageBoxFaq,Ul,Icon, List,Title,WrapImage, ImageBox2,LineImage ,Wrapper, WrapText,IconBox, ImageBox, Text,SubTitle} from './About.style'
 import ScrollToTop from '@/components/scroll to top/ScrollToTop'
 

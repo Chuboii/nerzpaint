@@ -27,8 +27,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
+            Nerzpaint is a new paint company with products that would make you smile and makes yoour space a beautiful and colorful place to live in.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -45,9 +44,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
-            varius pulvinar diam eros in elit. Pellentesque convallis laoreet
-            laoreet.
+           You can purchase our products by coming to our office or sending us a direct message in any of our social media platforms.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -64,8 +61,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-            amet egestas eros, vitae egestas augue. Duis vel est augue.
+           Nerzpaints is durable and long-lasting. You do not have to fear washing or peeling off your walls. As long as you use the right type of paint and quality for your space.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -83,8 +79,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-            amet egestas eros, vitae egestas augue. Duis vel est augue.
+         Delivery cost is covered by the customer.
           </Typography>
         </AccordionDetails>
       </Accordion>

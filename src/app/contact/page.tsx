@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import ContactFormButton from '@/components/buttons/contact form btn/ContactFormButton'
 import {Container, Wrapper,InputGroup, Title, SubText, Form, Textarea, Wrap, Label, Input, Icon, Span,FaqSection, ContactGroup, WrapContact, ImageBox, Text, Contact, FaqTitle, FaqText } from './Contact.style'
-import ControlledAccordions from '@/components/accordion/Accordion'
+import ControlledAccordions from '@/components/faq/Accordion'
 import ScrollToTop from '@/components/scroll to top/ScrollToTop'
 import { sendMail } from '@/lib/mail/mail'
 

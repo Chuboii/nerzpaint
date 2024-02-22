@@ -13,31 +13,21 @@ export const Container = styled.section`
     }
 
 `
-export const ImageBox = styled.div`
-   max-width:1020px;
-    height: 370px;
-    position:absolute;
-    display: flex;
-    right: 6rem;
-    top: 0rem; 
-    @media screen and (max-width:1008px){
-       position:relative;
-       top:1rem;
-    }
-`
 export const ImageBox2 = styled.div`
   top: 8rem;
       width:450px;
-    height: 250px;
+    height: 450px;
     position: absolute;
+    border-radius:50%;
 
     /* transform:rotate(180deg); */
     display: flex;
-  right: 0rem;
-  display:none;
+
+  right: 6rem;
+
   transition: all .5s;
     &:hover{
-      transform: rotate(180deg) scale(1.02);
+      transform: scale(1.02);
     }
     @media screen and (min-width:0) and (max-width:768px){
        width:500px;
@@ -55,7 +45,14 @@ export const ImageBox2 = styled.div`
        display:none;
   }
 
-  
-
-
+`
+export const ImageBox1 = styled.div`
+   width:250px;
+   z-index:1;
+   position:relative;
+   height:250px;
+   right:1rem;
+   top:21rem;
+   border:15px solid rgba(255, 255, 255, .3);
+   border-radius:50%;
 `

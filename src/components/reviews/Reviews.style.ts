@@ -23,6 +23,7 @@ font-size: 40px;
 margin: .5rem 0;
 font-weight: 900;
 margin-bottom: 3rem;
+margin-top:2rem;
 @media screen and (max-width:768px){
     font-size:25px;
     margin-bottom: 1rem;
