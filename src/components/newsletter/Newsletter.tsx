@@ -22,7 +22,7 @@ const Newsletter = () => {
         try {
             if (email) {
                 setLoading(true)
-               await fetch("https://nerzpaints.com/api/email/list/post", {
+               await fetch("/api/email/list/post", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
