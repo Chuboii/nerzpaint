@@ -80,6 +80,7 @@ export const Text = styled.p`
  `
 export const SwiperSlide = styled.div`
    margin: 1rem;
+
    @media screen and (max-width:1100px){
 margin: .5rem;
  

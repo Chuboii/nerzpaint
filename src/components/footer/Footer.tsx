@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import {FooterContainer,IconBox, Box, Icons, Header, Logo, Nav, Wrap, LinkWrap, Text, Form, Input, Button} from './Footer.style'
 import Link from 'next/link'
+import Newsletter from '../newsletter/Newsletter'
 
 const linkStyle = {
     color: "#eee",
@@ -18,10 +19,7 @@ const Footer: FC = () => {
                     <Wrap>
                         <Text>NEW TO NERZPAINT?</Text>
                         <Text>Subscribe to our newsletter to get updates on our latest products!</Text>
-                        <Form>
-                            <Input placeholder="Enter Email Address" />
-                            <Button>Subscribe</Button>
-                    </Form>
+                   <Newsletter/>
                     </Wrap>
                 </Header>
 
@@ -34,7 +32,6 @@ const Footer: FC = () => {
       <LinkWrap>
         <Text>USEFUl LINKS</Text>
         <Link style={linkStyle} href="/product-cards">Products</Link>
-        <Link style={linkStyle} href="/delivery-options">Delivery options and timelines</Link>
       </LinkWrap>
       <LinkWrap>
         <Text>ABOUT NERZPAINTS</Text>
@@ -42,7 +39,8 @@ const Footer: FC = () => {
               <Box>
                 <a title='nerzpaint tiktok page' href="https://www.tiktok.com/@nerzpaints?_t=8jttOtZUxgD&_r=1">
               <IconBox>
-              <Icons className="fa fa-tiktok" aria-hidden="true"></Icons>
+              <Icons className="fa fa-linkedin" aria-hidden="true"></Icons>
+          
                   </IconBox>
                 </a>
                 
@@ -51,12 +49,12 @@ const Footer: FC = () => {
                   <Icons className="fa fa-instagram" aria-hidden="true"></Icons>
                   </IconBox>
                 </a>
-              <IconBox>
+              {/* <IconBox>
                 <Icons className="fa fa-linkedin" aria-hidden="true"></Icons>
               </IconBox>
               <IconBox>
                 <Icons className="fa fa-twitter" aria-hidden="true"></Icons>
-           </IconBox>
+           </IconBox> */}
               </Box>
                 {/* <Link style={linkStyle} href="/snapcart-careers">Snapcart careers</Link>
         <Link style={linkStyle} href="/snapcart-express">Snapcart Express</Link> */}

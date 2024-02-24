@@ -5,9 +5,9 @@ export interface EmailTypes extends Document {
 }
 
 const EmailList = new Schema<EmailTypes>({
-  email: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
 }, {timestamps:true});
 
-const EmaiListInstance = mongoose.models.EmailList || mongoose.model<EmailTypes>('EmailList', EmailList);
+const EmailListInstance = mongoose.models.EmailList || mongoose.model<EmailTypes>('EmailList', EmailList);
 
-export default EmaiListInstance;
+export default EmailListInstance;

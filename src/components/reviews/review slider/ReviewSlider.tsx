@@ -4,6 +4,7 @@ import 'swiper/css';
 import { Container, H4, Title, Wrapper, Wrap, Icon, Comment, Name, ImageBox } from '../Reviews.style'
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { ReviewsDocType, getReviewData } from '@/app/reviews/review cards/ReviewCards';
 
 
 const imageStyle = {
@@ -13,7 +14,8 @@ const imageStyle = {
 const ReviewSlider = () => {
     const [isMobile, setIsMobile] = useState(false)
     const [isMidDesktop, setIsMidDesktop] = useState(false)
-
+    const [data, setData] = useState(null) as any[]
+    
     useEffect(() => {
         const width = window.innerWidth
 
@@ -33,23 +35,34 @@ const ReviewSlider = () => {
     }, [])
 
 
+    useEffect(() => {
+        const getDataFromReviews = async () => {
+            const review = await getReviewData()
+            setData(review.data)
+        }
+        
+        getDataFromReviews()
+},[])
+
     return (
     <>
 <Swiper
     spaceBetween={40}
     slidesPerView={isMobile ? 1: isMidDesktop ? 2: 3}
-    onSlideChange={() => console.log('slide change')}
-    onSwiper={(swiper) => console.log(swiper)}
 >          
-{/* <SwiperSlide>
-                    <Wrap>                <Icon className="fa fa-quote-right"></Icon>
-                <Comment>{"I'm so glad I chose Nerzpaint for my painting project. Their customer service was excellent, and the staff helped me select the perfect colors for my home. The paint quality is top-notch, and the results speak for themselves. My house looks fresh and modern, thanks to Nerzpaint's high-quality products!"}</Comment>
-                <Name>Peter Kalu</Name>
+                {data && data !== undefined && data.length > 0 ? data.map((review: ReviewsDocType) => (
+                    <SwiperSlide key={review._id}>
+                        <Wrap>
+                            <Icon className="fa fa-quote-right"></Icon>
+                            <Comment>{review.review}</Comment>
+                            <Name>{review.name}</Name>
                 <ImageBox>
-                    <Image style={imageStyle}  objectFit="cover" objectPosition="top" fill src={"/download (6).jpeg"} alt=''/>
+                                <Image style={imageStyle} objectFit="cover" objectPosition="top" fill src={review.photoUrl} alt={ `${review.name} images`} />
                         </ImageBox>
                     </Wrap>
-            </SwiperSlide> */}
+                    </SwiperSlide>
+                )) : ""
+                }
 
 
 

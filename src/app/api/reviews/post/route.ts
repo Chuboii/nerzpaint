@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 export async function POST(request: Request) {
     try {
         connectDB()
-        const { name, review, photoUrl } = await request.json();
+        const { name, review, photoUrl ="photourl" } = await request.json();
         
         const createReviewInDb = new ReviewInstance({
             name,

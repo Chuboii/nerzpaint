@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Nerzpaints Industries - Interior and Exterior Paint Designs",
+  title: "Nerzpaints - Interior and Exterior Paint Designs",
   description: "Nerzpaint emerges as a dynamic force within the paint industry. Find a colour right for your interior and exterior designs",
 };
 
@@ -30,11 +30,13 @@ export default function RootLayout({
       <meta name="robots" content="index,follow" />
       <meta property="og:description" content="Nerzpaint emerges as a dynamic force within the paint industry. Find a colour right for your interior and exterior designs."/>
       <meta property="og:url" content="https://nerzpaints.com"/>
+      <meta name="keywords" content="paints paint product home comfort painting painter shop" />
+     
       <Body className={inter.className} cz-shortcut-listen="true">
         <StyledComponentsRegistry>
           <GlobalStyles overflow=""/>
-         <Navbar />
-          {children}
+          <Navbar />
+            {children}
           <ScrollUp />
           <Footer />
          </StyledComponentsRegistry>

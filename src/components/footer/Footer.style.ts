@@ -77,6 +77,7 @@ padding:.7rem 1rem;
 width: 80%;
 border-radius: 5px;
 border: 1px solid;
+color:black;
 `
 export const Form = styled.form`
 width:100%;

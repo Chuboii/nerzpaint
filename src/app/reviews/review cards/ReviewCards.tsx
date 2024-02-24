@@ -5,24 +5,48 @@ const imageStyle = {
     borderRadius:'50%'
 }
 
-const ReviewCards = () => {
-  
+export type ReviewsDocType = {
+    name: string;
+    photoUrl: string;
+    review: string;
+    _id: number;
+}
+export const getReviewData = async () => {
+    try {
+        const data = await fetch("http://localhost:3000/api/reviews/get", {
+            next: {
+                revalidate:1000
+            }
+        })
+        return data.json()
+    }
 
+    catch (err: unknown) {
+        if (err instanceof Error) {
+            console.log(err)
+        }
+    }
+}
+
+const ReviewCards = async () => {
+    const reviews = await getReviewData()
 
     return (
     <>
-  <Box>
-                {/* <SwiperSlide>
-                    <Wrap>
-                        <Icon className="fa fa-quote-right"></Icon>
-                <Comment>{"I'm so glad I chose Nerzpaint for my painting project. Their customer service was excellent, and the staff helped me select the perfect colors for my home. The paint quality is top-notch, and the results speak for themselves. My house looks fresh and modern, thanks to Nerzpaint's high-quality products!"}</Comment>
-                <Name>Peter Kalu</Name>
-                <ImageBox>
-                    <Image style={imageStyle}  objectFit="cover" objectPosition="top" fill src={"/download (6).jpeg"} alt=''/>
-                        </ImageBox>
-                    </Wrap>
-            </SwiperSlide> */}
-
+            <Box>
+                {reviews && reviews.data !== undefined && reviews.data.length > 0 ?  reviews.data.map((review: ReviewsDocType) => (
+                    <SwiperSlide key={review._id}>
+                        <Wrap>
+                            <Icon className="fa fa-quote-right"></Icon>
+                            <Comment>{review.review }</Comment>
+                            <Name>{review.name}</Name>
+                            <ImageBox>
+                                <Image style={imageStyle} objectFit="cover" objectPosition="top" fill src={review.photoUrl} alt={`${review.name} image`} />
+                            </ImageBox>
+                        </Wrap>
+                    </SwiperSlide> 
+                )): ""
+                }
         </Box>
         </>
   )
