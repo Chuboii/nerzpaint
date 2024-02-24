@@ -23,7 +23,8 @@ const ReviewFormButton = ({name, photoUrl, review, clearInputFields}: ReviewForm
         try {
             if (name && photoUrl && review) {
                 setLoading(true)
-                const data = await fetch("https://nerzpaints.com/api/reviews/post", {
+                
+                await fetch("/api/reviews/post", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json"
