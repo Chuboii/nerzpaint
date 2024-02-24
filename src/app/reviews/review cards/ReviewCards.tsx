@@ -13,7 +13,7 @@ export type ReviewsDocType = {
 }
 export const getReviewData = async () => {
     try {
-        const data = await fetch("/api/reviews/get", {
+        const data = await fetch("https://nerzpaints.com/api/reviews/get", {
             next: {
                 revalidate:1000
             }
