@@ -1,0 +1,154 @@
+[
+{
+    "id": 0,
+    "product": "Silk Emulsion",
+    "litre": "20 litres",
+    "imageUrl": "/20ltrs buckets/01.jpg"
+},
+{
+    "id": 1,
+    "litre": "20 litres",
+    "product": "Alkyd Enamel Gloss Topcoat",
+    "imageUrl": "/20ltrs buckets/alkyd-enamel-topcoat.jpg"
+},
+{
+    "id": 2,
+    "litre": "20 litres",
+    "product": "Alkyd Enamel Primer",
+    "imageUrl": "/20ltrs buckets/alkyd.jpg"
+},
+{
+    "id": 3,
+    "litre": "20 litres",
+    "product": "Epoxy Intermediate",
+    "imageUrl": "/20ltrs buckets/epoxy-intermediate.jpg"
+},
+{
+    "id": 4,
+    "litre": "20 litres",
+    "product": "Epoxy Zinc Phosphate Primer",
+    "imageUrl": "/20ltrs buckets/epoxy-zinc.jpg"
+},
+{
+    "id": 5,
+    "litre": "20 litres",
+    "product": "External Putty Filter",
+    "imageUrl": "/20ltrs buckets/external-putty-filler.jpg"
+},
+{
+    "id": 6,
+    "litre": "20 litres",
+    "product": "Internal Putty Filter",
+    "imageUrl": "/20ltrs buckets/internal-putty-filler.jpg"
+},
+{
+    "id": 7,
+    "litre": "20 litres",
+    "product": "Matt Weather Shield",
+    "imageUrl": "/20ltrs buckets/matt-weather-shield.jpg"
+},
+{
+    "id": 8,
+    "litre": "20 litres",
+    "product": "Matt Emulsion",
+    "imageUrl": "/20ltrs buckets/matt.jpg"
+},
+{
+    "id": 9,
+    "litre": "20 litres",
+    "product": "Pu Topcoat",
+    "imageUrl": "/20ltrs buckets/pu.jpg"
+},
+{
+    "id": 10,
+    "litre": "20 litres",
+    "product": "Silk Emulsion",
+    "imageUrl": "/20ltrs buckets/silk.jpg"
+},
+{
+    "id":11,
+    "litre": "20 litres",
+    "product": "Satin Emulsion",
+    "imageUrl": "/20ltrs buckets/satin.jpg"
+},
+{
+    "id": 12,
+    "litre": "20 litres",
+    "product": "Texcoat",
+    "imageUrl": "/20ltrs buckets/texcoat.jpg"
+},
+{
+    "id": 13,
+    "litre": "4 litres",
+    "product": "Alkyd Enamel Gloss Topcoat",
+    "imageUrl": "/4Ltrs/1-alkyd-enamel.jpg"
+},
+{
+    "id": 14,
+    "litre": "4 litres",
+    "product": "Epoxy Intermediate",
+    "imageUrl": "/4Ltrs/1-epoxy-intermediate.jpg"
+},
+{
+    "id": 15,
+    "product": "Epoxy Zinc Phosphate Primer",
+    "imageUrl": "/4Ltrs/1-epoxy-zinc.jpg"
+},
+{
+    "id": 16,
+    "litre": "4 litres",
+    "product": "External Putty Filter",
+    "imageUrl": "/4Ltrs/1-external-putty-filler.jpg"
+},
+{
+    "id": 17,
+    "litre": "4 litres",
+    "product": "Internal Putty Filter",
+    "imageUrl": "/4Ltrs/1-internal-putty-filler.jpg"
+},
+{
+    "id": 19,
+    "litre": "4 litres",
+    "product": "Matt Weather Shield",
+    "imageUrl": "/4Ltrs/1-matt-emulsion-watershield.jpg"
+},
+{
+    "id": 20,
+    "litre": "4 litres",
+    "product": "Matt Emulsion",
+    "imageUrl": "/4Ltrs/1-matt-emulsion.jpg"
+},
+{
+    "id": 22,
+    "litre": "4 litres",
+    "product": "Alkyd Enamel Primer",
+    "imageUrl": "/4Ltrs/alkyd-enamel-primer.jpg"
+},
+{
+    "id": 23,
+    "litre": "4 litres",
+    "product": "Pu Topcoat",
+    "imageUrl": "/4Ltrs/Pu-topcoat.jpg"
+},
+
+{
+    "id": 24,
+    "litre": "4 litres",
+    "product": "Satin Emulsion",
+    "imageUrl": "/4Ltrs/Satin-Emulsion.jpg"
+},
+
+{
+    "id": 25,
+    "litre": "4 litres",
+    "product": "Texcoat",
+    "imageUrl": "/4Ltrs/texcoat.jpg"
+},
+
+{
+    "id": 26,
+    "litre": "4 litres",
+    "product": "Silk Emulsion",
+    "imageUrl": "/4Ltrs/silk-emulsion.jpg"
+}
+]

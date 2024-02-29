@@ -1,5 +1,7 @@
 import { Container,Box, SwiperSlide, H4, Title, Wrapper, Wrap, Icon, Comment, Name, ImageBox } from '../Reviews.style'
 import Image from 'next/image';
+import axios from 'axios'
+
 
 const imageStyle = {
     borderRadius:'50%'
@@ -13,12 +15,10 @@ export type ReviewsDocType = {
 }
 export const getReviewData = async () => {
     try {
-        const data = await fetch("https://www.nerzpaints.com/api/reviews/get", {
-            next: {
-                revalidate:1000
-            }
-        })
-        return data.json()
+        const data = await axios.get("http://localhost:3000/api/reviews/get")
+
+        console.log(data)
+        return data
     }
 
     catch (err: unknown) {

@@ -38,7 +38,7 @@ const ReviewSlider = () => {
     useEffect(() => {
         const getDataFromReviews = async () => {
             const review = await getReviewData()
-            setData(review.data)
+            setData(review?.data)
         }
         
         getDataFromReviews()

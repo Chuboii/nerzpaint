@@ -11,9 +11,10 @@ const Reviews = async () => {
   return (
     <Container>
       <Text>Reviews</Text>
-      {reviews && reviews.data !== undefined && reviews.data.length > 0 ?
+      {
+        reviews && reviews.data !== undefined && reviews.data.length > 0 &&
         <Title> What our customers said</Title>
-        : ""
+        
       }
       <ReviewSlider />
       

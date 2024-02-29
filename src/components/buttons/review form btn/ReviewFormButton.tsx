@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react"
 import { Button } from "./ReviewFormButton.style"
 import Error from "@/components/toastify/Error";
 import Success from "@/components/toastify/Success";
+import axios from 'axios'
 
 type ReviewFormButtonType = {
     name: string;
@@ -24,17 +25,14 @@ const ReviewFormButton = ({name, photoUrl, review, clearInputFields}: ReviewForm
             if (name && photoUrl && review) {
                 setLoading(true)
                 
-                await fetch("/api/reviews/post", {
-                    method: "POST",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
+                const data = await axios.post("http://localhost:3000/api/reviews/post",
+                    JSON.stringify({
                         name,
                         photoUrl,
                         review
                     })
-                })
+                )
+                console.log(data)
                 setIsSuccess(true)
                 setLoading(false)
                 setMessage("You have successfully posted a review")
