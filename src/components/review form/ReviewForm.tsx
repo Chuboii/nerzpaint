@@ -1,6 +1,6 @@
 'use client'
 import {useState, ChangeEvent, useEffect, useContext, useRef} from 'react'
-import { Container, Group, Span, SpanWords, Input, Textarea } from './ReviewForm.style'
+import { Container, Group, Span, SpanWords, Input, P,Textarea } from './ReviewForm.style'
 import { storage } from '@/lib/firebase/firebase'
 import ReviewFormButton from '../buttons/review form btn/ReviewFormButton'
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
@@ -20,13 +20,40 @@ const ReviewForm = () => {
   const [loading, setLoading] = useState(false)
   const [loaded, setLoaded] = useState(false)
   const fileRef = useRef<HTMLInputElement>(null);
+  const [maxLength, setMaxLength] = useState(false)
+  const [messageWords, setMessageWords] = useState(0)
+
+
+  
+  useEffect(() => {
+
+    if (formDetails.message.length <= 500) {
+      setMaxLength(true)
+      setMessageWords(c => c + 1)
+    }
+    else {
+      setMaxLength(false)
+    }
+
+    
+  }, [formDetails.message])
+
+  // useEffect(() => {
+  //  console.log(ref.current)
+  // }, [])
 
   const enableInputValues = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormDetails(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
+
+    if (e.target.name === 'message') {
+      console.log(e)
+    }
   }
+
+ 
 
 
 
@@ -59,9 +86,6 @@ uploadTask.on('state_changed',
   () => {
     getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
       setLoaded(true)
-      setTimeout(() => {
-        setLoading(false)
-      }, 2000)
       setPhotoUrl(downloadURL)
     });
   }
@@ -79,6 +103,7 @@ uploadTask.on('state_changed',
       message:""
     })
     setPhotoUrl("")
+    setLoading(false)
 
     if (fileRef.current) {
       fileRef.current.value = ""
@@ -100,12 +125,13 @@ uploadTask.on('state_changed',
               "Uploading..."
               }
           </Span> 
+          <P>Add an avatar</P>
             <Input ref={fileRef} onChange={extractPhotoUrl} name="photoUrl" type="file" />
           
               </Group>
               <Group>
-                  <Textarea maxLength={500} name="message" value={formDetails.message} onChange={enableInputValues} placeholder="Write your review here"/>
-             <SpanWords>500 words max</SpanWords>      
+                  <Textarea maxLength={maxLength ? 500 : 2000} name="message" value={formDetails.message} onChange={enableInputValues} placeholder="Write your review here"/>
+             <SpanWords>{messageWords}/500 </SpanWords>      
         </Group>
         <ReviewFormButton clearInputFields={clearInputFields} name={formDetails.name} photoUrl={photoUrl} review={formDetails.message} />
     </Container>

@@ -4,6 +4,7 @@ import { Button } from "./ReviewFormButton.style"
 import Error from "@/components/toastify/Error";
 import Success from "@/components/toastify/Success";
 import axios from 'axios'
+import { ProductContext } from "@/context/ProductContext";
 
 type ReviewFormButtonType = {
     name: string;
@@ -19,20 +20,22 @@ const ReviewFormButton = ({name, photoUrl, review, clearInputFields}: ReviewForm
     const [message, setMessage] = useState('')
     const [reRenderError, setReRenderError] = useState(false)
     const [reRenderSuccess, setReRenderSuccess] = useState(false)
+    const {setData, setReRender, reRender} = useContext(ProductContext)
 
     const submitFormToDb = async () => {
         try {
             if (name && photoUrl && review) {
                 setLoading(true)
                 
-                const data = await axios.post("http://localhost:3000/api/reviews/post",
-                    JSON.stringify({
+                const data = await axios.post("http://localhost:3000/api/reviews/post",{
                         name,
                         photoUrl,
                         review
-                    })
+                    }
                 )
-                console.log(data)
+                // setData(data.data)
+                // console.log(data.data)
+                setReRender(!reRender)
                 setIsSuccess(true)
                 setLoading(false)
                 setMessage("You have successfully posted a review")

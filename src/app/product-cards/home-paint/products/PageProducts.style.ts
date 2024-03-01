@@ -51,7 +51,7 @@ export const IconWrap = styled.div`
 `
 export const Text = styled.div`
  font-weight: 600;
- font-size: 22px;
+ font-size: 18px;
 `
 
 export const Box = styled.div`
@@ -97,7 +97,7 @@ export const Title = styled.h1`
 
 export const Icon = styled.div`
  color: orange;
- 
+ font-size:16px; 
  @media screen and (max-width:768px){
     font-size:14px;
  }

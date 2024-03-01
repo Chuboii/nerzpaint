@@ -1,6 +1,10 @@
-import { Container,Box, SwiperSlide, H4, Title, Wrapper, Wrap, Icon, Comment, Name, ImageBox } from '../Reviews.style'
+'use client'
+import { Container, Box, SwiperSlide, H4, Title, Wrapper, Wrap, Icon, Comment, Name, ImageBox } from '../Reviews.style'
 import Image from 'next/image';
 import axios from 'axios'
+import { useContext, useEffect } from 'react';
+import { ProductContext } from '@/context/ProductContext';
+import { getReviewData } from '@/lib/get review data/getReviewData';
 
 
 const imageStyle = {
@@ -12,29 +16,35 @@ export type ReviewsDocType = {
     photoUrl: string;
     review: string;
     _id: number;
+    id: number;
 }
-export const getReviewData = async () => {
-    try {
-        const data = await axios.get("http://localhost:3000/api/reviews/get")
 
-        console.log(data)
-        return data
-    }
+const ReviewCards = () => {
+    const { data, setData, reRender} = useContext(ProductContext)
+    
+    useEffect(() => {
+        const getData = async () => {
+            try {
+                const data = await getReviewData()
+                
+                console.log(data)
+                setData(data)
 
-    catch (err: unknown) {
-        if (err instanceof Error) {
-            console.log(err)
+            }
+            catch (err) {
+                if (err instanceof Error) {
+                    console.log(err)
+                }
+            }
         }
-    }
-}
 
-const ReviewCards = async () => {
-    const reviews = await getReviewData()
+        getData()
+    }, [reRender])
 
     return (
     <>
             <Box>
-                {reviews && reviews.data !== undefined && reviews.data.length > 0 ?  reviews.data.map((review: ReviewsDocType) => (
+                {data && data.data !== undefined && data.data.length > 0 ?  data.data.map((review: ReviewsDocType) => (
                     <SwiperSlide key={review._id}>
                         <Wrap>
                             <Icon className="fa fa-quote-right"></Icon>

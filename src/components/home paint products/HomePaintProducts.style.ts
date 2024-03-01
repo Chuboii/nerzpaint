@@ -38,7 +38,7 @@ export const IconWrap = styled.div`
 `
 export const Text = styled.div`
  font-weight: 600;
- font-size: 22px;
+ font-size: 18px;
 `
 
 export const Box = styled.div`

@@ -11,33 +11,35 @@ const ImageStyle = {
 
 const HomePaintProducts = () => {
 
-
   
   return (
     <>
           <Container>
               <Title>Home Paint Products</Title>
         <WrapBox>  
-          {HomePaintProduct.map(product => (
-            <Wrapper key={product.id}>
-              <Wrap>
-                <ImageBox>
-                  <Image style={ImageStyle} src={product.imageUrl} alt={`nerzpaints ${product.product} image`} fill />
-                </ImageBox>
-                <Box1>
-                  <Box>Brand Product</Box>
-                  <IconWrap>
-                    <Icon className="fa fa-star" aria-hidden="true"></Icon>
-                    <Icon className="fa fa-star" aria-hidden="true"></Icon>
-                    <Icon className="fa fa-star" aria-hidden="true"></Icon>
-                    <Icon className="fa fa-star" aria-hidden="true"></Icon>
-                    <Icon className="fa fa-star" aria-hidden="true"></Icon>
-                  </IconWrap>
-                </Box1>
-              </Wrap>
-              <Text>{product.product}</Text>
-            </Wrapper>
-          ))}
+          {HomePaintProduct.map(product => {
+            
+            return (
+              <Wrapper key={product.id}>
+                <Wrap>
+                  <ImageBox>
+                    <Image style={ImageStyle} src={product.imageUrl} alt={`nerzpaints ${product.product} image`} fill />
+                  </ImageBox>
+                  <Box1>
+                    <Box>{product.litre }</Box>
+                    <IconWrap>
+                      <Icon className="fa fa-star" aria-hidden="true"></Icon>
+                      <Icon className="fa fa-star" aria-hidden="true"></Icon>
+                      <Icon className="fa fa-star" aria-hidden="true"></Icon>
+                      <Icon className="fa fa-star" aria-hidden="true"></Icon>
+                      <Icon className="fa fa-star" aria-hidden="true"></Icon>
+                    </IconWrap>
+                  </Box1>
+                </Wrap>
+                <Text>{product.product}</Text>
+              </Wrapper>
+            )
+          }).slice(0, 8)}
         </WrapBox>
          
    <HomeLoadMoreButton/>

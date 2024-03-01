@@ -1,7 +1,7 @@
+import { getReviewData } from '@/lib/get review data/getReviewData'
 import ReviewForm from '../review form/ReviewForm'
 import { Container,Text, Title, Wrapper, Wrap, Icon, Comment, Name, ImageBox } from './Reviews.style'
 import ReviewSlider from "./review slider/ReviewSlider"
-import { getReviewData } from '@/app/reviews/review cards/ReviewCards'
 
 
 const Reviews = async () => {

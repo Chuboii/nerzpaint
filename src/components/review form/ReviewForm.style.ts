@@ -52,4 +52,10 @@ background:orangered;
 display: ${({display}) => display};
 `
 
-
+export const P = styled.p`
+margin: .5rem;
+color:#4E5CC4;
+padding:.2rem .8rem;
+font-size:15px;
+border-radius:7px;
+`

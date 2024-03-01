@@ -8,6 +8,7 @@ import StyledComponentsRegistry from "./registry";
 import ScrollUp from "@/components/scroll up/ScrollUp";
 import {Body } from './HomeStyles.style'
 import { GlobalStyles } from "./globalStyles";
+import { ProductProvider } from "@/context/ProductContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,11 +35,13 @@ export default function RootLayout({
      
       <Body className={inter.className} cz-shortcut-listen="true">
         <StyledComponentsRegistry>
+          <ProductProvider>
           <GlobalStyles overflow=""/>
           <Navbar />
             {children}
           <ScrollUp />
-          <Footer />
+            <Footer />
+          </ProductProvider>
          </StyledComponentsRegistry>
       <Script src="https://kit.fontawesome.com/20b8edb75e.js" crossOrigin="anonymous"></Script>
     </Body>
