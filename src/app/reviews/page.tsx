@@ -2,7 +2,7 @@ import ReviewForm from '@/components/review form/ReviewForm'
 import { Container,Text, LineImageBox, Title, Wrapper, Wrap, Icon, Comment, Name, ImageBox } from './Reviews.style'
 import ReviewCards from './review cards/ReviewCards'
 import Image from 'next/image'
-import { getReviewData } from './review cards/ReviewCards'
+import { getReviewData } from '@/lib/get review data/getReviewData';
 
 
 const Reviews = async () => {

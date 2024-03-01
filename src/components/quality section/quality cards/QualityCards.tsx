@@ -14,9 +14,7 @@ const QualityCards = () => {
                   </ImageBox>
             </Box>
               <Text>Quality Paints</Text>
-       <WrapBox>
-        <Icon className="fa fa-arrow-right" aria-hidden="true"></Icon>
-        </WrapBox>
+
           </Card> 
           
           <Card>
@@ -26,10 +24,6 @@ const QualityCards = () => {
                   </ImageBox> 
             </Box>    
               <Text>Futuristic Designs</Text>
-     <WrapBox>
-
-        <Icon className="fa fa-arrow-right" aria-hidden="true"></Icon>
-        </WrapBox>
 
           </Card> 
 
@@ -42,9 +36,7 @@ const QualityCards = () => {
                 </Box>
               
     <Text>New formulars </Text>
-   <WrapBox>
-              <Icon className="fa fa-arrow-right" aria-hidden="true"></Icon>
-              </WrapBox>
+
 
           </Card> 
     </Container>

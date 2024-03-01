@@ -85,7 +85,7 @@ const ContactPage = () => {
             </ImageBox>
             
             <Text> Email </Text>
-            <Contact>nerzpaints@gmail.com</Contact>
+            <Contact>info@nerzpaints.com</Contact>
           </WrapContact>
 
           <WrapContact>
