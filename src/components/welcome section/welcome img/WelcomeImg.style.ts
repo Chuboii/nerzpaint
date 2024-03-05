@@ -10,6 +10,7 @@ export const Container = styled.section`
     @media screen and (max-width:1008px){
        position:relative;
        top:1rem;
+       display: none;
     }
 
 `
