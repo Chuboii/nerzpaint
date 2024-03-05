@@ -9,7 +9,7 @@ import { GlobalStyles } from '@/app/globalStyles'
 
 const Navbar = () => {
   const [isScreenScrolled, setIsScreenScrolled] = useState(false)
-  const [enableNavbarMobile, setEnableNavbarMobile] = useState(false)
+ const [enableNavbarMobile, setEnableNavbarMobile] = useState(false)
   const router = useRouter()
   const pathname = usePathname()
   const [linkStyle, setLinkStyle] = useState({})

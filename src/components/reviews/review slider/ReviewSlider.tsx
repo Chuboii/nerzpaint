@@ -7,7 +7,7 @@ import { useContext, useEffect, useState } from 'react';
 import { ReviewsDocType } from '@/app/reviews/review cards/ReviewCards';
 import { getReviewData } from '@/lib/get review data/getReviewData';
 import { ProductContext } from '@/context/ProductContext';
-
+import Avatar from 'react-avatar';
 
 const imageStyle = {
     borderRadius:'50%'
@@ -60,7 +60,7 @@ const ReviewSlider = () => {
                                     <Comment>{review.review}</Comment>
                                     <Name>{review.name}</Name>
                                     <ImageBox>
-                                        <Image style={imageStyle} objectFit="cover" objectPosition="top" fill src={review.photoUrl} alt={`${review.name} images`} />
+                                    <Avatar size='70px' round={true} name={review.name} />
                                     </ImageBox>
                                 </Wrap>
                             </SwiperSlide>

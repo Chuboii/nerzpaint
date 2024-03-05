@@ -66,10 +66,8 @@ export const Comment = styled.p`
 export const Name = styled.p`
   margin: 1rem 0;
   color: black;
+  text-transform:capitalize;
  `
 export const ImageBox = styled.div`
-  width: 50px; 
-  height: 50px; 
-  position: relative;
-  border-radius: 50%;
+ 
  `

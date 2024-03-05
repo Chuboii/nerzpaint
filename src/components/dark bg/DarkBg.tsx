@@ -3,7 +3,7 @@ import { GlobalStyles } from '@/app/globalStyles';
 import { Container } from './DarkBg.style'
 
 type DarkBgType = {
-    disableNavbar: (arg0 : boolean) => void;
+    disableNavbar: (arg0 : boolean) => void | string;
     overflow: string;
 }
 

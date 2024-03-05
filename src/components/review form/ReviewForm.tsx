@@ -24,7 +24,7 @@ const ReviewForm = () => {
   const [messageWords, setMessageWords] = useState(0)
 
 
-  
+
   useEffect(() => {
 
     if (formDetails.message.length <= 500) {
@@ -125,9 +125,9 @@ uploadTask.on('state_changed',
               "Uploading..."
               }
           </Span> 
-          <P>Add an avatar</P>
+          {/* <P>Add an avatar</P>
             <Input ref={fileRef} onChange={extractPhotoUrl} name="photoUrl" type="file" />
-          
+           */}
               </Group>
               <Group>
                   <Textarea maxLength={maxLength ? 500 : 2000} name="message" value={formDetails.message} onChange={enableInputValues} placeholder="Write your review here"/>

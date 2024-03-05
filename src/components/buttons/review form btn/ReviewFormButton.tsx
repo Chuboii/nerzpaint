@@ -24,12 +24,11 @@ const ReviewFormButton = ({name, photoUrl, review, clearInputFields}: ReviewForm
 
     const submitFormToDb = async () => {
         try {
-            if (name && photoUrl && review) {
+            if (name && review) {
                 setLoading(true)
                 
-                const data = await axios.post("http://localhost:3000/api/reviews/post",{
+                const data = await axios.post("https://nerzpaints.com/api/reviews/post",{
                         name,
-                        photoUrl,
                         review
                     }
                 )
