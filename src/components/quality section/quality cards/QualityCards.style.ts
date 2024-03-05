@@ -12,6 +12,7 @@ export const Container = styled.section`
  @media screen and (max-width:768px){
       width:100%;
       right: 0;
+      display: none;
     }
 `
 export const ImageBox = styled.div`
