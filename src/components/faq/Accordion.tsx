@@ -27,7 +27,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nerzpaint is a new paint company with products that would make you smile and makes yoour space a beautiful and colorful place to live in.
+            Nerzpaints is a new paint company with products that would make you smile and makes yoour space a beautiful and colorful place to live in.
           </Typography>
         </AccordionDetails>
       </Accordion>
