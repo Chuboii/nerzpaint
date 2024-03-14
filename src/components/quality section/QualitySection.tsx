@@ -12,7 +12,7 @@ const QualitySection = () => {
           <QualityCards />
 
           <Box>
-              <Title>Welcome to Nerzpaint</Title>
+              <Title>Welcome to Nerzpaints</Title>
             <Intro>Tired of using fake and ineffective paint products?</Intro> 
             <ImageBoxLine>
               <Image src="/area-line.png" alt="" fill />
