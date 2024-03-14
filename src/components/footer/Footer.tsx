@@ -17,7 +17,7 @@ const Footer: FC = () => {
                     <Logo>NERZPAINTS</Logo>
 
                     <Wrap>
-                        <Text>NEW TO NERZPAINT?</Text>
+                        <Text>NEW TO NERZPAINTS?</Text>
                         <Text>Subscribe to our newsletter to get updates on our latest products!</Text>
                    <Newsletter/>
                     </Wrap>
