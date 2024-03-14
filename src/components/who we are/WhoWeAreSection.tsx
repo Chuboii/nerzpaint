@@ -8,7 +8,7 @@ const WhoWeAreSection = () => {
           <Container>
         <Wrapper>
           <Title>Who we are?</Title>
-    <Text>Nerzpaint is new and fast rising paint company that deals on interior and exterior paints as well as Marine paints</Text>
+    <Text>Nerzpaints is new and fast rising paint company that deals on interior and exterior paints as well as Marine paints</Text>
       <MoreAboutButton/>
         </Wrapper>
 
