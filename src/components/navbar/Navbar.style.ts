@@ -19,7 +19,7 @@ export const Container = styled.nav<ContainerType>`
     background-color: ${({bg}) => bg};
     align-items: center;
     display:flex;
-    z-index: 9;
+    z-index: 1000;
 
     @media screen and (max-width:1028px){
         padding:.5rem 1rem;
